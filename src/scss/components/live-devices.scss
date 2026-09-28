@@ -1,0 +1,15 @@
+.component-live-devices {
+  .live-device-item {
+    .btn {
+      display: block;
+    }
+  }
+  .live-device-table {
+    th {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      min-width: 140px;
+    }
+  }
+}

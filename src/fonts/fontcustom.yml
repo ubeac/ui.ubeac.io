@@ -1,0 +1,22 @@
+# config/fontcustom.yml
+# https://github.com/FontCustom/fontcustom
+font_name: ubeacons
+css_selector: .icon-{{glyph}}
+preprocessor_path: ""
+autowidth: true
+no_hash: true
+force: false
+debug: false
+quiet: false
+
+input:
+  vectors: ./
+
+output:
+  fonts: ../../public/static/fonts
+  css: ../scss/
+  preview: ../../public/static/fonts
+templates:
+ - scss
+
+preprocessor_path: '#{$fontBaseUrl}'

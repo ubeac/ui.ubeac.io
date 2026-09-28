@@ -1,0 +1,15 @@
+.component-color-picker {
+  .vue-swatches__wrapper {
+    padding-left: 0px !important;
+  }
+  .vue-swatches__swatch ,
+  .vue-swatches__check__circle {
+    width: 28px !important;
+    height: 28px !important;
+  }
+  .vue-swatches__container {
+    background: none !important;
+    z-index: 9999 !important;
+    padding-left: 0px !important;
+  }
+}

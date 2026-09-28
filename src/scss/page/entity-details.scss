@@ -1,0 +1,104 @@
+// Deprecated Class
+.team-page-entity-info-card,
+.page-entity-info-card {
+   background: $gray-f9 !important;
+  .icon-area {
+     background: $white !important;
+  }
+}
+
+.page-entity-details {
+  .entity-details-description {
+    color: $gray-9b;
+  }
+  section {
+    .lined {
+      &:first-child {
+        padding-top: .7em !important;
+      }
+    }
+  }
+}
+
+.page-entitie-details-gateway .component-entity-details--text {
+  padding-top: .5em !important;
+}
+
+.entity-page-details {
+  .tab-content {
+    border: 0;
+    border-top: 1px solid $gray-200;
+  }
+
+  .edit-info-area {
+    border-left: 1px solid $gray-f5;
+  }
+
+  .entity-page-details--list {
+    border: 0;
+  }
+
+  .entity-page-details--building-floor {
+    padding-left: 2em;
+  }
+  .entity-page-details--members {
+    overflow: auto;
+  }
+  .entity-page-details--date {
+    text-align: right;
+    word-break: break-all;
+    @media (max-width: 767px) {
+      text-align: left;
+      margin-top: 1em;
+    }
+  }
+
+  .card-info-icon-area {
+    width: 5em;
+    height: 5em;
+    position: relative;
+    i {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .entity-page-details--image-card {
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    position: relative;
+    float: left;
+    background: $disableColor;
+    &:hover {
+      outline: 2px solid $primaryColor;
+    }
+    .card-header {
+      padding: 0;
+      height: 145px;
+      position: relative;
+      background: $white;
+      overflow: hidden;
+    }
+
+    .card-img {
+      max-height: 90%;
+      width: auto;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      float: left;
+    }
+    .card-body {
+      min-height: 65px;
+      @media (max-width: 320px) {
+        height: 85px;
+      }
+    }
+  }
+}

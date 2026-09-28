@@ -1,0 +1,65 @@
+.component-entity-sensors {
+  overflow: hidden;
+  .item {
+    padding: 0 !important;
+    border-radius: $border-radius-6;
+    max-width: 100%;
+    float: left;
+    background: $sensor-item-bg;
+  }
+  span.badge {
+    background: $sensor-badge;
+  }
+  span.main-text {
+    display: block;
+    color: $sensor-badge-text;
+    line-height: 32px;
+    padding-right: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 10px;
+    span {
+      color: $sensor-badge-text;
+    }
+  }
+
+  .icon-area {
+    background: $sensor-badge;
+    float: left;
+    margin-right: 0;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    i {
+      position: absolute;
+      width: 100%;
+      font-size: 1.5em;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $sensor-badge-text;
+    }
+  }
+
+  &.small {
+    border-radius: $border-radius-0;
+    .icon-area {
+      margin-right: 0;
+      width: 2.8em;
+      height: 2.8em;
+      i {
+        transform: translate(-50%, -50%), scale(.4);
+      }
+    }
+    .item {
+      border-radius: $border-radius-0;
+    }
+  }
+  .empty-state {
+    color: $sensor-badge-text;
+  }
+}

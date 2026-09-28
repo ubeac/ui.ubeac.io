@@ -1,0 +1,86 @@
+.component-gateway-security {
+  .component-gateway-security--text {
+     margin-top: 5px;
+  }
+  .component-gateway-security--url {
+    text-align: left !important;
+    background: transparent;
+    &.http-security {
+      width: calc(100% - 5em);
+    }
+    &.mqtt-security {
+      width: calc(100% - 20em);
+      @include media-breakpoint-up(xxl) {
+        width: calc(100% - 32em);
+      }
+      @include media-breakpoint-down(lg) {
+        width: calc(100% - 6em);
+      }
+    }
+    .component-gateway-copy-url--url-area,
+    .form-control{
+      text-align: left !important;
+      background: $white;
+      color: $primaryColor !important;
+      &:focus {
+        background-color: $white !important;
+        border: 0;
+      }
+    }
+    .btn {
+      color: $primaryColor !important;
+    }
+    .modal {
+      .component-gateway-copy-url--url-area,
+      .form-control {
+        background: $gray-f9;
+      }
+    }
+  }
+  &.component-gateway-security--restriction {
+    td {
+      padding-top: 1em !important;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    .btn-outline-success, 
+      .btn-outline-danger {
+       width: 100% !important;
+       margin-left: 0 !important;
+       margin-right: 0 !important;
+    }
+  }
+  
+  .alert {
+    background: rgba(23, 77, 175, 0.05);
+    color: $primaryColor;
+    border: 0;
+    small {
+      opacity: 0.8;
+    }
+  }
+  table,
+  .gateway-security-table {
+    table-layout: fixed;
+    width: 100%;
+    th,td {
+      width: 45%;
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      vertical-align: top !important;
+      .table-input {
+        width: calc(100% - 4em);
+        display: block;
+        overflow: hidden;
+        input {
+          display: inline-block;
+        }
+      }
+      @include media-breakpoint-down(sm) {
+        width: 100% !important;
+      }
+    }
+  }
+}

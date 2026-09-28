@@ -1,0 +1,42 @@
+.live-data-details-model {
+  .tree-view-wrapper {
+    padding: 1em;
+  }
+  .tabs {
+    position: relative;
+
+    .nav-tabs {
+      padding-top: .2em;
+    }
+    .tabs-toolbox {
+      position: absolute;
+      right: 0;
+      height: 2.5em;
+      width: 10em;
+      top: .2em;
+    }
+  }
+  .modal-header {
+    border-bottom: 0;
+  }
+
+  .modal-dialog {
+    overflow-y: initial !important
+  }
+  .modal-body {
+    padding-top: 0;
+    height: 450px;
+    overflow: hidden;
+  }
+
+  .tab-pane {
+    height: 390px;
+    overflow: auto;
+    padding: 0;
+  }
+  textarea {
+    height: 390px;
+    max-height: 390px;
+    max-width: 100%;
+  }
+}

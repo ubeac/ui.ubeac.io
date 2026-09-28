@@ -1,0 +1,102 @@
+.component-gateway-data-table {
+
+  .table th,
+  .table td {
+    vertical-align: middle;
+  }
+
+  .tree-view-wrapper {
+    padding: 1em;
+  }
+
+  .tabs {
+    position: relative;
+
+    .nav-tabs {
+      padding-top: .2em;
+    }
+    .tabs-toolbox {
+      position: absolute;
+      right: 0;
+      height: 2.5em;
+      width: 10em;
+      top: .2em;
+    }
+  }
+
+  .modal-header {
+    border-bottom: 0;
+  }
+
+  .modal-dialog {
+    overflow-y: initial !important
+  }
+  .modal-body {
+    padding-top: 0;
+    height: 450px;
+    overflow: hidden;
+  }
+
+  .tab-pane {
+    height: 390px;
+    overflow: auto;
+    padding: 0;
+  }
+  .modal {
+    textarea {
+      height: 390px;
+      max-height: 390px;
+      max-width: 100%;
+    }
+  }
+
+  //TODO: Check and remove this block
+  .component-gateway-data-table--modal {
+    .modal-body {
+      margin-bottom: .6em;
+    }
+    .card-header {
+      border: 0;
+      background-color: transparent;
+      padding: 0 0 1em 0;
+      outline: 0;
+      // margin-bottom: 0.5em;
+      .card-header-pills {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        outline: 0;
+      }
+
+      .nav-pills .nav-link {
+        background-color: transparent;
+        color: $primaryColorLighter;
+        &.active {
+          background-color: lighten($sidebar-background, 30);
+          color: $white;
+          border-radius: $border-radius-6;
+        }
+      }
+    }
+    .tab-content {
+      border-radius: $border-radius-6;
+    }
+    .tabs-toolbox {
+      top: .7em !important;
+    }
+    .dropdown-menu.dropdown-menu-right.show {
+      padding: 0;
+      border-radius: $border-radius-6;
+    }
+    @include media-breakpoint-down(xs) {
+      .modal-title-date {
+        display: block;
+      }
+    }
+  }
+  .text-warning {
+    .widget-icon {
+      font-size: 1.2em;
+    }
+  }
+
+}

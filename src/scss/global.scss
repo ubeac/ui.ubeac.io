@@ -1,0 +1,398 @@
+a,
+a:hover {
+  text-decoration: none;
+}
+
+legend {
+  font-size: 1.1em;
+}
+
+body {
+  background-color: $body-bg !important;
+  font-size: 14px !important;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.green-color {
+   color: $green !important;
+}
+
+.primary-color {
+  color: $primaryColor;
+}
+
+.lined-header {
+  display: block;
+  position: relative;
+  float: left;
+  width: calc(100% - 1em);
+  margin-left: 1em;
+  padding-left: 0;
+  border-bottom: 1px solid $gray-ec;
+  &:first-child,
+  &.noline {
+    border-bottom: 0;
+  }
+}
+
+.lined-bottom-lined,
+.form-bottom-lined {
+  border-bottom: 1px solid $gray-ec !important;
+}
+
+.form-top-lined {
+  border-top: 1px solid $gray-ec !important;
+}
+
+.lined {
+  display: block;
+  position: relative;
+  float: left;
+  width: calc(100% - 1.5em);
+  margin-left: 1.5em;
+  min-height: 2.8em;
+  padding-top: .5em .5em .5em 0;
+  border-top: 1px solid $gray-ec;
+  
+  &:first-child,
+  &.noline {
+    border-top: 0;
+  }
+
+
+  .lined-map {
+    border-radius: $border-radius-6;
+    border: 1px solid $gray-ec;
+    overflow: hidden;
+    height: 400px;
+    margin-right: 1.1em !important;
+    margin-bottom: .5em !important;
+    .vue-map-container,
+    .leaflet-floor-map {
+      height: 600px;
+    }
+  }
+
+  .alert {
+    display: block;
+    border-radius: 0 !important;
+    width: 100%;
+    margin: 0;
+    border: 0;
+    min-height: 2.8em;
+    background-color: rgba(#E46A6A, 0.15);
+    color: #E46A6A;
+    span {
+      font-size: 1.2em;
+    }
+    i {
+      display: block;
+      height: 2.2em;
+      width: 2.2em;
+      color: $white;
+      border-radius: 100%;
+      background-color: #E46A6A;
+      position: relative;
+      top: -.3em;
+      &::before {
+        font-size: 1.3em;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+      }
+    }
+    &.alert-email-verified {
+      i {
+        &::before {
+          top: 19px;
+        }
+      }
+      @include media-breakpoint-down(xs) {
+        i {
+          @media (max-width: 344px) {
+            margin-bottom: .4em;
+            top: 2px;
+          }
+          width: 2em;
+          height: 2em;
+        }
+        .alert-text {
+          font-size: .8em;
+        }
+        .btn-outline-danger {
+          width: 98%;
+        }
+      }
+    }
+  }
+
+  p {
+    color: $gray-5;
+    width: calc(100% - 200px);
+    float: left;
+    height: auto;
+    //line-height: 4.2em;
+    margin-top: 1.2em;
+    padding-bottom: 0;
+    min-height: 2em;
+    line-height: 2.3em;
+    @include media-breakpoint-down(xs) {
+      width: 100% !important;
+      margin-top: 0;
+    }
+  }
+
+  label {
+    font-size: .9em;
+    color: $form-label-color;
+    width: 200px;
+    float: left;
+    min-height: 3.8em;
+    height: auto;
+    line-height: 4.2em;
+    padding-bottom: 0;
+    justify-content: left;
+    margin-top: .5em;
+    margin-bottom: 0;
+  }
+}
+
+.under-dev{
+   outline: 2px dashed tomato;
+}
+
+// TODO: fix this from bootstrap variables file
+.tooltip {
+  &.bs-tooltip-bottom {
+    .arrow:before{
+      border-bottom-color: $tooltip-background !important; 
+    }
+  }
+  &.bs-tooltip-top {
+    .arrow:before{
+      border-top-color: $tooltip-background !important; 
+    }
+  }
+  .tooltip-inner {
+    background-color: $tooltip-background !important;
+    color: $tooltip-color !important;
+  }
+}
+
+.main,
+.app {
+  background-color: $main-background;
+}
+
+.no-shadow {
+  box-shadow: none !important;
+}
+
+.shadow-light {
+  box-shadow: $box-shadow-light;
+}
+
+.dropdown-menu {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.border-radius-6 {
+  border-radius: $border-radius-6 !important;
+}
+
+.tab-title-badge{
+  min-width: 1em;
+  min-height: 1em;
+  border-radius: 100%;
+}
+
+.aside-menu {
+  background: $white;
+  z-index: 10 !important;
+  position: relative;
+}
+
+.text-primary {
+  color: $primaryColor !important;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.text-numb {
+  color: lighten($gray-12, 2);
+}
+
+.page-main-content {
+  padding-top: 1.5em;
+}
+
+.page-content-header {
+  width: 100%;
+  padding-left: .5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  line-height: 2.8em;
+  height: 4.5em;
+  color: $page-title-color;
+
+  .btn {
+    position: relative;
+    z-index: 10000;
+  }
+
+  .btn-top-form {
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 2.5em;
+    .btn {
+      z-index: 10000;
+      height: 2.5em;
+      width: 12em;
+      text-align: center;
+      .icon {
+        font-size: .8em;
+      }
+    }
+  }
+
+  h3 {
+    font-size: 26px;
+    font-weight: normal !important;
+    color: $primaryColor !important;
+  }
+
+  >div {
+    line-height: 2.8em;
+  }
+
+  .page-content-header--icon {
+    color: $page-title-color;
+    font-size: 1.8em;
+  }
+  @include media-breakpoint-down(sm) {
+    padding-left: .2em;
+    padding-right: .2em;
+    .btn-top-form {
+      position: static;
+      margin: auto;
+      width: 100%;
+      .btn {
+        margin-top: .5em;
+        margin-bottom: .5em;
+        float: left;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.modal {
+  z-index: 20000;
+}
+
+.router-link-active,
+.router-link-exact-active {
+  color: $secondaryColor !important;
+
+  i {
+    color: $secondaryColor !important;
+  }
+}
+
+.main .container-fluid {
+  padding: 0 1.5em;
+}
+
+.container.app-body {
+  @include media-breakpoint-down(lg) {
+    max-width: 960px;
+  }
+}
+
+.form-control[readonly] {
+  background-color: $disableColor;
+  pointer-events: none;
+
+  &:focus {
+    box-shadow: none;
+    border-color: $disableBorder;
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 150ms
+}
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
+}
+.modal-content {
+  border-radius: $border-radius-6;
+}
+
+
+.collapsed.card-header .when-opened,
+.card-header:not(.collapsed) .when-closed {
+  display: none;
+}
+
+// .table {
+//   td {
+//     white-space: nowrap;
+//     overflow: hidden;
+//   }
+// }
+
+.fullscreen {
+  background-color: $body-bg !important;
+}
+// TODO: Move blew blocks to correct scss file
+
+.component-gateway-data-table--modal {
+  .modal-body {
+    padding: 0;
+  }
+  .modal-content {
+    height: 600px;
+  }
+}
+.component-gateway-data-table--modal-body {
+  .card-header {
+    height: 4.3em !important;
+    li:first-child {
+      a {
+        padding-left: .5em;
+      }
+      .active {
+        margin-left: 5px;
+        padding-left: 1rem;
+      }
+    }
+  }
+  .tabs-toolbox {
+    .dropdown.show {
+      .btn-outline-primary {
+        color: $white !important;
+      }
+    }
+  }
+
+  .tab-content {
+    border-bottom: 0;
+    max-height: calc(600px - 140px);
+    min-height: 450px;
+    overflow: auto;
+  }
+  .tab-contents {
+    textarea {
+      border-color: transparent;
+    }
+  }
+}
+

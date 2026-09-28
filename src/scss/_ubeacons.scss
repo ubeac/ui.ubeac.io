@@ -1,0 +1,545 @@
+//
+// Icon Font: ubeacons
+//
+
+@font-face {
+  font-family: "ubeacons";
+  src: url("#{$fontBaseUrl}/ubeacons.eot");
+  src: url("#{$fontBaseUrl}/ubeacons.eot?#iefix") format("embedded-opentype"),
+       url("#{$fontBaseUrl}/ubeacons.woff2") format("woff2"),
+       url("#{$fontBaseUrl}/ubeacons.woff") format("woff"),
+       url("#{$fontBaseUrl}/ubeacons.ttf") format("truetype"),
+       url("#{$fontBaseUrl}/ubeacons.svg#ubeacons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "ubeacons";
+    src: url("#{$fontBaseUrl}/ubeacons.svg#ubeacons") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.icon-acceleration:before,
+.icon-admin:before,
+.icon-altitude:before,
+.icon-arrow-left:before,
+.icon-arrow-right:before,
+.icon-asset-tracking:before,
+.icon-at:before,
+.icon-bathroom-hair-dryer:before,
+.icon-battery:before,
+.icon-beacon:before,
+.icon-beat:before,
+.icon-bicycle:before,
+.icon-bluetooth:before,
+.icon-boat:before,
+.icon-bolt:before,
+.icon-building:before,
+.icon-building-castle:before,
+.icon-building-official:before,
+.icon-bus-school:before,
+.icon-calendar-alt:before,
+.icon-cancel:before,
+.icon-cancel-thin:before,
+.icon-car:before,
+.icon-car-ambulance:before,
+.icon-car-repair:before,
+.icon-car-smart:before,
+.icon-cargo-boat:before,
+.icon-chart:before,
+.icon-check:before,
+.icon-check-badge:before,
+.icon-clock:before,
+.icon-cloud-download-alt:before,
+.icon-coffee-espresso-machine:before,
+.icon-cog:before,
+.icon-cogs:before,
+.icon-color:before,
+.icon-compress:before,
+.icon-copy:before,
+.icon-counter:before,
+.icon-crosshairs:before,
+.icon-dashboard:before,
+.icon-desktop-computer-pc:before,
+.icon-device:before,
+.icon-disability-ad:before,
+.icon-disability-blind:before,
+.icon-disability-wheelchair:before,
+.icon-distance:before,
+.icon-docs:before,
+.icon-dog:before,
+.icon-door:before,
+.icon-door-lock:before,
+.icon-dot-circle:before,
+.icon-download:before,
+.icon-download-file:before,
+.icon-drone-camera:before,
+.icon-edit:before,
+.icon-exclamation-triangle:before,
+.icon-execute:before,
+.icon-expand:before,
+.icon-eye:before,
+.icon-eye-slash:before,
+.icon-farming:before,
+.icon-farming-wheat:before,
+.icon-file:before,
+.icon-file-alt:before,
+.icon-file-contract:before,
+.icon-filter:before,
+.icon-fire:before,
+.icon-floor:before,
+.icon-food-kiosk:before,
+.icon-fridge:before,
+.icon-gauge:before,
+.icon-globe:before,
+.icon-gyroscope:before,
+.icon-hdd:before,
+.icon-heartbeat:before,
+.icon-help:before,
+.icon-help-wheel:before,
+.icon-hospital-shield:before,
+.icon-house-garage:before,
+.icon-humidity:before,
+.icon-info-regular:before,
+.icon-interval-time:before,
+.icon-key:before,
+.icon-latitude:before,
+.icon-laundry-machine:before,
+.icon-layer-group:before,
+.icon-light:before,
+.icon-light-dark-toggle:before,
+.icon-lightbulb:before,
+.icon-link:before,
+.icon-list:before,
+.icon-location-map:before,
+.icon-lock:before,
+.icon-log:before,
+.icon-logout:before,
+.icon-magic:before,
+.icon-magnet:before,
+.icon-manufacturer:before,
+.icon-map-marked-alt:before,
+.icon-map-marker-alt:before,
+.icon-map-pin:before,
+.icon-memory:before,
+.icon-menu:before,
+.icon-mobile-phone:before,
+.icon-motorcycle:before,
+.icon-nodata:before,
+.icon-orientation:before,
+.icon-park-ferris-wheel:before,
+.icon-pause:before,
+.icon-pencil-alt:before,
+.icon-pet-tracking:before,
+.icon-pin-home:before,
+.icon-pin-plane:before,
+.icon-pin-user:before,
+.icon-plane:before,
+.icon-plant:before,
+.icon-plant-pot:before,
+.icon-play:before,
+.icon-playhouse:before,
+.icon-plug:before,
+.icon-plus:before,
+.icon-plus-circle:before,
+.icon-plus-thin:before,
+.icon-power:before,
+.icon-pressure:before,
+.icon-profile:before,
+.icon-proximity:before,
+.icon-qrcode:before,
+.icon-redo-alt:before,
+.icon-request:before,
+.icon-rotational-motion:before,
+.icon-rotationalmotion:before,
+.icon-route:before,
+.icon-safety-fire-alarm:before,
+.icon-safety-fire-extinguisher:before,
+.icon-save:before,
+.icon-school-building:before,
+.icon-search:before,
+.icon-sensors:before,
+.icon-shield:before,
+.icon-signal:before,
+.icon-sitemap:before,
+.icon-socket:before,
+.icon-sound:before,
+.icon-step-count:before,
+.icon-stove-gas-pot:before,
+.icon-table:before,
+.icon-tag:before,
+.icon-tea-kettle:before,
+.icon-team:before,
+.icon-temperature:before,
+.icon-text:before,
+.icon-text-document:before,
+.icon-tracking:before,
+.icon-trash-alt:before,
+.icon-truck:before,
+.icon-truck-channel-van:before,
+.icon-truck-empty:before,
+.icon-truck-firefighter:before,
+.icon-truck-rv:before,
+.icon-truck-satelite:before,
+.icon-tv-curvy:before,
+.icon-upload:before,
+.icon-users:before,
+.icon-users1:before,
+.icon-voltage:before,
+.icon-widget:before {
+  display: inline-block;
+  font-family: "ubeacons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.icon-acceleration:before { content: "\f13d"; }
+.icon-admin:before { content: "\f175"; }
+.icon-altitude:before { content: "\f144"; }
+.icon-arrow-left:before { content: "\f101"; }
+.icon-arrow-right:before { content: "\f102"; }
+.icon-asset-tracking:before { content: "\f167"; }
+.icon-at:before { content: "\f158"; }
+.icon-bathroom-hair-dryer:before { content: "\f1b7"; }
+.icon-battery:before { content: "\f1c3"; }
+.icon-beacon:before { content: "\f15e"; }
+.icon-beat:before { content: "\f16d"; }
+.icon-bicycle:before { content: "\f18c"; }
+.icon-bluetooth:before { content: "\f17b"; }
+.icon-boat:before { content: "\f18d"; }
+.icon-bolt:before { content: "\f103"; }
+.icon-building:before { content: "\f104"; }
+.icon-building-castle:before { content: "\f19d"; }
+.icon-building-official:before { content: "\f19e"; }
+.icon-bus-school:before { content: "\f18e"; }
+.icon-calendar-alt:before { content: "\f105"; }
+.icon-cancel:before { content: "\f16a"; }
+.icon-cancel-thin:before { content: "\f142"; }
+.icon-car:before { content: "\f18f"; }
+.icon-car-ambulance:before { content: "\f1a7"; }
+.icon-car-repair:before { content: "\f190"; }
+.icon-car-smart:before { content: "\f191"; }
+.icon-cargo-boat:before { content: "\f192"; }
+.icon-chart:before { content: "\f15a"; }
+.icon-check:before { content: "\f106"; }
+.icon-check-badge:before { content: "\f1c1"; }
+.icon-clock:before { content: "\f184"; }
+.icon-cloud-download-alt:before { content: "\f152"; }
+.icon-coffee-espresso-machine:before { content: "\f1b8"; }
+.icon-cog:before { content: "\f107"; }
+.icon-cogs:before { content: "\f108"; }
+.icon-color:before { content: "\f18b"; }
+.icon-compress:before { content: "\f154"; }
+.icon-copy:before { content: "\f109"; }
+.icon-counter:before { content: "\f189"; }
+.icon-crosshairs:before { content: "\f157"; }
+.icon-dashboard:before { content: "\f16e"; }
+.icon-desktop-computer-pc:before { content: "\f193"; }
+.icon-device:before { content: "\f164"; }
+.icon-disability-ad:before { content: "\f1a8"; }
+.icon-disability-blind:before { content: "\f1a9"; }
+.icon-disability-wheelchair:before { content: "\f1aa"; }
+.icon-distance:before { content: "\f145"; }
+.icon-docs:before { content: "\f187"; }
+.icon-dog:before { content: "\f19f"; }
+.icon-door:before { content: "\f1b9"; }
+.icon-door-lock:before { content: "\f1ba"; }
+.icon-dot-circle:before { content: "\f153"; }
+.icon-download:before { content: "\f10b"; }
+.icon-download-file:before { content: "\f171"; }
+.icon-drone-camera:before { content: "\f1a0"; }
+.icon-edit:before { content: "\f10c"; }
+.icon-exclamation-triangle:before { content: "\f10e"; }
+.icon-execute:before { content: "\f177"; }
+.icon-expand:before { content: "\f10f"; }
+.icon-eye:before { content: "\f110"; }
+.icon-eye-slash:before { content: "\f111"; }
+.icon-farming:before { content: "\f1ab"; }
+.icon-farming-wheat:before { content: "\f1ac"; }
+.icon-file:before { content: "\f112"; }
+.icon-file-alt:before { content: "\f113"; }
+.icon-file-contract:before { content: "\f15c"; }
+.icon-filter:before { content: "\f115"; }
+.icon-fire:before { content: "\f116"; }
+.icon-floor:before { content: "\f16b"; }
+.icon-food-kiosk:before { content: "\f1ad"; }
+.icon-fridge:before { content: "\f1bb"; }
+.icon-gauge:before { content: "\f185"; }
+.icon-globe:before { content: "\f117"; }
+.icon-gyroscope:before { content: "\f17c"; }
+.icon-hdd:before { content: "\f118"; }
+.icon-heartbeat:before { content: "\f139"; }
+.icon-help:before { content: "\f159"; }
+.icon-help-wheel:before { content: "\f170"; }
+.icon-hospital-shield:before { content: "\f1a1"; }
+.icon-house-garage:before { content: "\f1bc"; }
+.icon-humidity:before { content: "\f146"; }
+.icon-info-regular:before { content: "\f155"; }
+.icon-interval-time:before { content: "\f16f"; }
+.icon-key:before { content: "\f11a"; }
+.icon-latitude:before { content: "\f162"; }
+.icon-laundry-machine:before { content: "\f1bd"; }
+.icon-layer-group:before { content: "\f11b"; }
+.icon-light:before { content: "\f15d"; }
+.icon-light-dark-toggle:before { content: "\f1b6"; }
+.icon-lightbulb:before { content: "\f11c"; }
+.icon-link:before { content: "\f11d"; }
+.icon-list:before { content: "\f11e"; }
+.icon-location-map:before { content: "\f141"; }
+.icon-lock:before { content: "\f11f"; }
+.icon-log:before { content: "\f176"; }
+.icon-logout:before { content: "\f173"; }
+.icon-magic:before { content: "\f120"; }
+.icon-magnet:before { content: "\f121"; }
+.icon-manufacturer:before { content: "\f174"; }
+.icon-map-marked-alt:before { content: "\f122"; }
+.icon-map-marker-alt:before { content: "\f123"; }
+.icon-map-pin:before { content: "\f124"; }
+.icon-memory:before { content: "\f1c2"; }
+.icon-menu:before { content: "\f17a"; }
+.icon-mobile-phone:before { content: "\f194"; }
+.icon-motorcycle:before { content: "\f195"; }
+.icon-nodata:before { content: "\f17e"; }
+.icon-orientation:before { content: "\f14a"; }
+.icon-park-ferris-wheel:before { content: "\f1ae"; }
+.icon-pause:before { content: "\f125"; }
+.icon-pencil-alt:before { content: "\f126"; }
+.icon-pet-tracking:before { content: "\f1a2"; }
+.icon-pin-home:before { content: "\f196"; }
+.icon-pin-plane:before { content: "\f19b"; }
+.icon-pin-user:before { content: "\f197"; }
+.icon-plane:before { content: "\f19a"; }
+.icon-plant:before { content: "\f19c"; }
+.icon-plant-pot:before { content: "\f1b2"; }
+.icon-play:before { content: "\f127"; }
+.icon-playhouse:before { content: "\f1a3"; }
+.icon-plug:before { content: "\f128"; }
+.icon-plus:before { content: "\f129"; }
+.icon-plus-circle:before { content: "\f166"; }
+.icon-plus-thin:before { content: "\f15f"; }
+.icon-power:before { content: "\f14b"; }
+.icon-pressure:before { content: "\f14c"; }
+.icon-profile:before { content: "\f1bf"; }
+.icon-proximity:before { content: "\f14d"; }
+.icon-qrcode:before { content: "\f12a"; }
+.icon-redo-alt:before { content: "\f12b"; }
+.icon-request:before { content: "\f16c"; }
+.icon-rotational-motion:before { content: "\f14e"; }
+.icon-rotationalmotion:before { content: "\f17d"; }
+.icon-route:before { content: "\f12c"; }
+.icon-safety-fire-alarm:before { content: "\f1b4"; }
+.icon-safety-fire-extinguisher:before { content: "\f1b5"; }
+.icon-save:before { content: "\f12d"; }
+.icon-school-building:before { content: "\f1a4"; }
+.icon-search:before { content: "\f12e"; }
+.icon-sensors:before { content: "\f165"; }
+.icon-shield:before { content: "\f186"; }
+.icon-signal:before { content: "\f12f"; }
+.icon-sitemap:before { content: "\f137"; }
+.icon-socket:before { content: "\f163"; }
+.icon-sound:before { content: "\f18a"; }
+.icon-step-count:before { content: "\f14f"; }
+.icon-stove-gas-pot:before { content: "\f1b3"; }
+.icon-table:before { content: "\f140"; }
+.icon-tag:before { content: "\f151"; }
+.icon-tea-kettle:before { content: "\f1be"; }
+.icon-team:before { content: "\f179"; }
+.icon-temperature:before { content: "\f13f"; }
+.icon-text:before { content: "\f13e"; }
+.icon-text-document:before { content: "\f156"; }
+.icon-tracking:before { content: "\f168"; }
+.icon-trash-alt:before { content: "\f133"; }
+.icon-truck:before { content: "\f198"; }
+.icon-truck-channel-van:before { content: "\f1a5"; }
+.icon-truck-empty:before { content: "\f1af"; }
+.icon-truck-firefighter:before { content: "\f1b0"; }
+.icon-truck-rv:before { content: "\f199"; }
+.icon-truck-satelite:before { content: "\f1b1"; }
+.icon-tv-curvy:before { content: "\f1a6"; }
+.icon-upload:before { content: "\f1c0"; }
+.icon-users:before { content: "\f160"; }
+.icon-users1:before { content: "\f172"; }
+.icon-voltage:before { content: "\f150"; }
+.icon-widget:before { content: "\f178"; }
+
+$font-ubeacons-acceleration: "\f13d";
+$font-ubeacons-admin: "\f175";
+$font-ubeacons-altitude: "\f144";
+$font-ubeacons-arrow-left: "\f101";
+$font-ubeacons-arrow-right: "\f102";
+$font-ubeacons-asset-tracking: "\f167";
+$font-ubeacons-at: "\f158";
+$font-ubeacons-bathroom-hair-dryer: "\f1b7";
+$font-ubeacons-battery: "\f1c3";
+$font-ubeacons-beacon: "\f15e";
+$font-ubeacons-beat: "\f16d";
+$font-ubeacons-bicycle: "\f18c";
+$font-ubeacons-bluetooth: "\f17b";
+$font-ubeacons-boat: "\f18d";
+$font-ubeacons-bolt: "\f103";
+$font-ubeacons-building: "\f104";
+$font-ubeacons-building-castle: "\f19d";
+$font-ubeacons-building-official: "\f19e";
+$font-ubeacons-bus-school: "\f18e";
+$font-ubeacons-calendar-alt: "\f105";
+$font-ubeacons-cancel: "\f16a";
+$font-ubeacons-cancel-thin: "\f142";
+$font-ubeacons-car: "\f18f";
+$font-ubeacons-car-ambulance: "\f1a7";
+$font-ubeacons-car-repair: "\f190";
+$font-ubeacons-car-smart: "\f191";
+$font-ubeacons-cargo-boat: "\f192";
+$font-ubeacons-chart: "\f15a";
+$font-ubeacons-check: "\f106";
+$font-ubeacons-check-badge: "\f1c1";
+$font-ubeacons-clock: "\f184";
+$font-ubeacons-cloud-download-alt: "\f152";
+$font-ubeacons-coffee-espresso-machine: "\f1b8";
+$font-ubeacons-cog: "\f107";
+$font-ubeacons-cogs: "\f108";
+$font-ubeacons-color: "\f18b";
+$font-ubeacons-compress: "\f154";
+$font-ubeacons-copy: "\f109";
+$font-ubeacons-counter: "\f189";
+$font-ubeacons-crosshairs: "\f157";
+$font-ubeacons-dashboard: "\f16e";
+$font-ubeacons-desktop-computer-pc: "\f193";
+$font-ubeacons-device: "\f164";
+$font-ubeacons-disability-ad: "\f1a8";
+$font-ubeacons-disability-blind: "\f1a9";
+$font-ubeacons-disability-wheelchair: "\f1aa";
+$font-ubeacons-distance: "\f145";
+$font-ubeacons-docs: "\f187";
+$font-ubeacons-dog: "\f19f";
+$font-ubeacons-door: "\f1b9";
+$font-ubeacons-door-lock: "\f1ba";
+$font-ubeacons-dot-circle: "\f153";
+$font-ubeacons-download: "\f10b";
+$font-ubeacons-download-file: "\f171";
+$font-ubeacons-drone-camera: "\f1a0";
+$font-ubeacons-edit: "\f10c";
+$font-ubeacons-exclamation-triangle: "\f10e";
+$font-ubeacons-execute: "\f177";
+$font-ubeacons-expand: "\f10f";
+$font-ubeacons-eye: "\f110";
+$font-ubeacons-eye-slash: "\f111";
+$font-ubeacons-farming: "\f1ab";
+$font-ubeacons-farming-wheat: "\f1ac";
+$font-ubeacons-file: "\f112";
+$font-ubeacons-file-alt: "\f113";
+$font-ubeacons-file-contract: "\f15c";
+$font-ubeacons-filter: "\f115";
+$font-ubeacons-fire: "\f116";
+$font-ubeacons-floor: "\f16b";
+$font-ubeacons-food-kiosk: "\f1ad";
+$font-ubeacons-fridge: "\f1bb";
+$font-ubeacons-gauge: "\f185";
+$font-ubeacons-globe: "\f117";
+$font-ubeacons-gyroscope: "\f17c";
+$font-ubeacons-hdd: "\f118";
+$font-ubeacons-heartbeat: "\f139";
+$font-ubeacons-help: "\f159";
+$font-ubeacons-help-wheel: "\f170";
+$font-ubeacons-hospital-shield: "\f1a1";
+$font-ubeacons-house-garage: "\f1bc";
+$font-ubeacons-humidity: "\f146";
+$font-ubeacons-info-regular: "\f155";
+$font-ubeacons-interval-time: "\f16f";
+$font-ubeacons-key: "\f11a";
+$font-ubeacons-latitude: "\f162";
+$font-ubeacons-laundry-machine: "\f1bd";
+$font-ubeacons-layer-group: "\f11b";
+$font-ubeacons-light: "\f15d";
+$font-ubeacons-light-dark-toggle: "\f1b6";
+$font-ubeacons-lightbulb: "\f11c";
+$font-ubeacons-link: "\f11d";
+$font-ubeacons-list: "\f11e";
+$font-ubeacons-location-map: "\f141";
+$font-ubeacons-lock: "\f11f";
+$font-ubeacons-log: "\f176";
+$font-ubeacons-logout: "\f173";
+$font-ubeacons-magic: "\f120";
+$font-ubeacons-magnet: "\f121";
+$font-ubeacons-manufacturer: "\f174";
+$font-ubeacons-map-marked-alt: "\f122";
+$font-ubeacons-map-marker-alt: "\f123";
+$font-ubeacons-map-pin: "\f124";
+$font-ubeacons-memory: "\f1c2";
+$font-ubeacons-menu: "\f17a";
+$font-ubeacons-mobile-phone: "\f194";
+$font-ubeacons-motorcycle: "\f195";
+$font-ubeacons-nodata: "\f17e";
+$font-ubeacons-orientation: "\f14a";
+$font-ubeacons-park-ferris-wheel: "\f1ae";
+$font-ubeacons-pause: "\f125";
+$font-ubeacons-pencil-alt: "\f126";
+$font-ubeacons-pet-tracking: "\f1a2";
+$font-ubeacons-pin-home: "\f196";
+$font-ubeacons-pin-plane: "\f19b";
+$font-ubeacons-pin-user: "\f197";
+$font-ubeacons-plane: "\f19a";
+$font-ubeacons-plant: "\f19c";
+$font-ubeacons-plant-pot: "\f1b2";
+$font-ubeacons-play: "\f127";
+$font-ubeacons-playhouse: "\f1a3";
+$font-ubeacons-plug: "\f128";
+$font-ubeacons-plus: "\f129";
+$font-ubeacons-plus-circle: "\f166";
+$font-ubeacons-plus-thin: "\f15f";
+$font-ubeacons-power: "\f14b";
+$font-ubeacons-pressure: "\f14c";
+$font-ubeacons-profile: "\f1bf";
+$font-ubeacons-proximity: "\f14d";
+$font-ubeacons-qrcode: "\f12a";
+$font-ubeacons-redo-alt: "\f12b";
+$font-ubeacons-request: "\f16c";
+$font-ubeacons-rotational-motion: "\f14e";
+$font-ubeacons-rotationalmotion: "\f17d";
+$font-ubeacons-route: "\f12c";
+$font-ubeacons-safety-fire-alarm: "\f1b4";
+$font-ubeacons-safety-fire-extinguisher: "\f1b5";
+$font-ubeacons-save: "\f12d";
+$font-ubeacons-school-building: "\f1a4";
+$font-ubeacons-search: "\f12e";
+$font-ubeacons-sensors: "\f165";
+$font-ubeacons-shield: "\f186";
+$font-ubeacons-signal: "\f12f";
+$font-ubeacons-sitemap: "\f137";
+$font-ubeacons-socket: "\f163";
+$font-ubeacons-sound: "\f18a";
+$font-ubeacons-step-count: "\f14f";
+$font-ubeacons-stove-gas-pot: "\f1b3";
+$font-ubeacons-table: "\f140";
+$font-ubeacons-tag: "\f151";
+$font-ubeacons-tea-kettle: "\f1be";
+$font-ubeacons-team: "\f179";
+$font-ubeacons-temperature: "\f13f";
+$font-ubeacons-text: "\f13e";
+$font-ubeacons-text-document: "\f156";
+$font-ubeacons-tracking: "\f168";
+$font-ubeacons-trash-alt: "\f133";
+$font-ubeacons-truck: "\f198";
+$font-ubeacons-truck-channel-van: "\f1a5";
+$font-ubeacons-truck-empty: "\f1af";
+$font-ubeacons-truck-firefighter: "\f1b0";
+$font-ubeacons-truck-rv: "\f199";
+$font-ubeacons-truck-satelite: "\f1b1";
+$font-ubeacons-tv-curvy: "\f1a6";
+$font-ubeacons-upload: "\f1c0";
+$font-ubeacons-users: "\f160";
+$font-ubeacons-users1: "\f172";
+$font-ubeacons-voltage: "\f150";
+$font-ubeacons-widget: "\f178";

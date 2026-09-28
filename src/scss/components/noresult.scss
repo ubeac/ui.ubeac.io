@@ -1,0 +1,15 @@
+.component-artwork-no-result {
+  display: block;
+  width: 100%;
+  i {
+    font-size: 6em !important;
+    width: 100%;
+    margin-bottom: .1em;
+    text-align: center;
+    height: 1em;
+    color: $artwork-no-result-color !important;
+  }
+  .text-muted {
+    color: $artwork-no-result-color !important;
+  }
+}

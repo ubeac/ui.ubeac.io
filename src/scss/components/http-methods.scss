@@ -1,0 +1,23 @@
+.http-method {
+  width: 4em;
+  text-align: center;
+  color: $white;
+  font-size: .8em;
+}
+
+.http-get {
+  background: $http-get !important;
+}
+
+.http-post {
+  background: $http-post !important;
+}
+
+.http-put {
+  background: $http-put !important;
+}
+
+.http-delete {
+  background: $http-delete !important;
+}
+

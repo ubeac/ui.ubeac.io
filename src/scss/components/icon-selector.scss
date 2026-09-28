@@ -1,0 +1,46 @@
+.component-icon-selector {
+  .card {
+    background: none;
+  }
+  .component-icon-selector--selected {
+    color: $green !important;
+    border: 2px solid $green !important;
+    .icon {
+      font-size: 2em !important;
+    }
+  }
+  .btn-outline-success ,
+  .btn-outline-dark {
+    display: block;
+    width: 3em;
+    height: 3em;
+    border: 2px solid $white;
+    background: $white;
+    float: left;
+    position: relative;
+    font-size: 1.2em;
+    &:hover {
+      color: $secondaryColor !important;
+      border: 2px solid $secondaryColor;
+    }
+    &:focus {
+      box-shadow: none !important;
+      border: 2px solid $secondaryColor;
+    }
+    &:active {
+      box-shadow: none !important;
+      color: $secondaryColor !important;
+      border: 2px solid $secondaryColor;
+      border-color: $secondaryColor !important;
+      background-color: $white !important;
+    }
+    .icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1.4em;
+      margin-top: 0;
+    }
+  }
+}

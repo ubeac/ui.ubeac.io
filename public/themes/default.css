@@ -1,0 +1,61 @@
+/*
+Error: Undefined variable: "$gray-600".
+        on line 19 of ./src/scss/themes/default.scss
+
+14: $main-background: #F3F3F3;
+15: 
+16: // Navbar Header
+17: $navbar-header-border: $gray-ec;
+18: $navbar-header-background: $white;
+19: $navbar-header-brand-color: $gray-600;
+20: $navbar-header-brand-background-image: url('#{$imageBaseUrl}logo.svg');
+21: $navbar-header-brand-minimized-background-image: url('#{$imageBaseUrl}logo-symbol.png') !important;
+22: $navbar-header-toggler-color: $gray-4;
+23: $navbar-header-toggler-color-hover: $gray-4;
+24: $navbar-header-toggler-color-active: $gray-4;
+
+Backtrace:
+./src/scss/themes/default.scss:19
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:478:in `visit_variable'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `with_base'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/exec/sass_scss.rb:338:in `watch_or_update'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/exec/base.rb:50:in `parse'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/lib/sass/exec/base.rb:18:in `parse!'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/gems/sass-3.7.3/bin/sass:13:in `<top (required)>'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/bin/sass:23:in `load'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/bin/sass:23:in `<main>'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/bin/ruby_executable_hooks:24:in `eval'
+/Users/Arsham/.rvm/gems/ruby-2.6.0/bin/ruby_executable_hooks:24:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$gray-600\".\A         on line 19 of ./src/scss/themes/default.scss\A \A 14: $main-background: #F3F3F3;\A 15: \A 16: // Navbar Header\A 17: $navbar-header-border: $gray-ec;\A 18: $navbar-header-background: $white;\A 19: $navbar-header-brand-color: $gray-600;\A 20: $navbar-header-brand-background-image: url('#{$imageBaseUrl}logo.svg');\A 21: $navbar-header-brand-minimized-background-image: url('#{$imageBaseUrl}logo-symbol.png') !important;\A 22: $navbar-header-toggler-color: $gray-4;\A 23: $navbar-header-toggler-color-hover: $gray-4;\A 24: $navbar-header-toggler-color-active: $gray-4;"; }

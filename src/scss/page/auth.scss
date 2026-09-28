@@ -1,0 +1,246 @@
+.page-auth {
+  width: 100%;
+  height: 100%;
+  background: $white;
+  position: relative;
+  * {
+    transform: scale(1);
+  }
+  & > .card {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    & > .row{
+      height: 100%;
+    }
+  }
+  .h2 {
+    color: $primaryColorLighter;
+    font-weight: bold;
+    font-size: 24px !important;
+  }
+  .text-desc {
+    color: $auth-desc-color;
+    font-size: 1em;
+  }
+    
+  ::placeholder {
+    color: $auth-desc-color !important;
+  }
+    
+  .card {
+    height: 100%;
+    background-color: $white;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  .register-page-artwork {
+    position: relative;
+    .register-page-artwork--solid {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background: lighten($gray-fa, 1);
+    }
+    .register-page-artwork--gradiant {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: 260%;
+      background-image: url('/static/img/artworks/auth-big-bg.png');
+    }
+    .register-page-artwork--artwork {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain; 
+      z-index: 3;
+      @include media-breakpoint-up(xl) {
+        background-size: auto; 
+      }
+      @include media-breakpoint-down(xl) {
+        background-size: contain; 
+      }
+    }
+  }
+  .page-auth--form-area{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 50%;
+    @include media-breakpoint-down(lg) {
+      width: 70%;
+    }
+    @include media-breakpoint-down(md) {
+      width: 70%;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+  .login-logo {
+    max-width: 250px;
+  }
+  .input-group {
+    .form-control {
+      border-radius: $border-radius-6;
+      border: 2px solid $auth-desc-color;
+      height: 41px;
+    }
+  }
+  .page-register--create--btn {
+    width: 90%;
+    border-radius: $border-radius-25;
+    height: 40px;
+    font-size: 1.2em;
+    background: $secondaryColor !important;
+    box-shadow: $box-shadow-fab;
+    &:hover {
+      background: darken($secondaryColor, 10) !important;
+    }
+    &:active,
+    &:focus {
+      background: darken($secondaryColor, 10) !important;
+    }
+  }
+  .page-register--login--text {
+    font-size: 12px;
+    color: $gray-ba;
+  }
+  .page-register--login--btn {
+    color: $primaryColorLighter;
+    font-size: 12px;
+    &:hover {
+      color: darken($primaryColorLighter, 10) !important;
+    }
+    &:active,
+    &:focus {
+      color: darken($primaryColorLighter, 10) !important;
+    }
+  }
+  .page-auth--forgotpass--btn {
+    a {
+      color: $primaryColorLighter;
+      font-size: 14px;
+      &:hover {
+        color: darken($primaryColorLighter, 10) !important;
+      }
+      &:active,
+      &:focus {
+        color: darken($primaryColorLighter, 10) !important;
+      }
+    }
+  }
+  .btn-loading {
+    &::before {
+      border-radius: $border-radius-25 !important;
+    }
+  }
+  .btn-success {
+    a {
+      color: $white;
+    }
+  }
+  .bg-primary {
+    background-color: $primaryColor;
+  }
+  // .page-auth--forgotpass--btn {
+  //   a {
+  //     color: $gray-7;
+  //   }
+  // }
+  .page-auth--register--btn {
+    @media (min-width: 1280px) {
+      display: none;
+    }
+  }
+  .page-auth--login--btn {
+    @media (max-width: 441px) {
+      width: 100%;
+      margin-bottom: 10px;
+      button {
+        width: 100%;
+      }
+    }
+  }
+
+  
+  &.page-register {
+    .card {
+      border-radius: 0 !important;
+    }
+    .page-register--form {
+      max-height: fit-content;
+    }
+    .page-register--artwork {
+      background: $gray-f5;
+      background-image: url('#{$imageBaseUrl}artworks/auth-bg.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    // .page-register--login--btn {
+    //   @media (min-width: 1280px) {
+    //     display: none;
+    //   }
+    // }
+  }
+  @media (min-width: 993px) {
+    &.page-register {
+      .page-register--create--btn {
+        width: 100%;
+      }
+    }
+    &.page-forgot {
+      .page-forgot--login--btn {
+        display: none;
+      }
+      .page-forgot--submit--btn {
+        width: 100%;
+      }
+    }
+  }
+  .widget-icon {
+    color: $gray-a;
+  }
+  // TODO: Change below css with specific class
+  @media (max-width: 992px) {
+    .input-group-text {
+      position: relative;
+      width: 40px;
+      height: 35px;
+      i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+      }
+    }
+  }
+  .form-prepend-icon {
+    .icon {
+      left: 12px;
+    }
+  }
+}

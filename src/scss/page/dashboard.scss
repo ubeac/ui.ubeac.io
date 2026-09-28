@@ -1,0 +1,27 @@
+.page-dashboard {
+  .page-dashboard-widget--tall {
+    height: 18.5em;
+    overflow: hidden;
+    border: 0;
+    .page-dashboard-widget--description {
+      height: 10em;
+      overflow: hidden;
+    }
+  }
+  .page-dashboard-widget--very-tall {
+    height: 31.5em;
+    overflow: hidden;
+    .page-dashboard-widget--description {
+      height: 17em;
+      overflow: hidden;
+    }
+  }
+  .page-dashboard--footer-button {
+    display: block;
+    position: absolute;
+    bottom: 1em;
+  }
+  .cart-footer {
+    background-color: $white;
+  }
+}

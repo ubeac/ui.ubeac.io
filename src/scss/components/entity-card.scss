@@ -1,0 +1,369 @@
+.component-entity-card {
+  border: 0;
+  border-radius: $border-radius-6 !important;
+  box-shadow: $box-shadow-entity;
+  border-bottom-style: solid;
+
+
+  & > .bottom-border {
+    position: absolute;
+    height: 1px;
+    bottom: 0;
+    right: 30%;
+    left: 30%;
+    background: $red;
+    z-index: 1000;
+    border-radius: $border-radius-6 !important;
+  }
+
+
+  &.component-entity-card--very-tall {
+    height: 29em;
+  }
+
+  .card-header {
+    border-bottom: 0;
+    background: transparent;
+    h4 {
+      line-height: 0.8em;
+      color: $card-header-color;
+      padding-bottom: .5em !important;
+      margin-bottom: 0;
+    }
+
+    &.component-gateway-card--map {
+      min-height: 100px;
+      background-image: url("#{$imageBaseUrl}map/grid.png");
+    }
+
+    .component-entity-card--user-badge {
+      display: none;
+      position: absolute;
+      top: 1.2em;
+      right: 1.2em;
+      color: $primaryColor;
+      font-size: .8em;
+      border-radius: $border-radius-6;
+      background: $gray-fd;
+    }
+
+  }
+
+  .card-body {
+    background: transparent;
+    h4 {
+      line-height: 0.8em;
+      color: $card-body-color;
+      padding-bottom: .5em !important;
+      margin-bottom: 0;
+    }
+    .text-description {
+      color: $card-description-color;
+      font-size: .9em;
+    }
+    .widget-icon {
+      color: $card-widget-icon-color !important;
+    }
+    .entity-item-card--badge {
+      text-align: center;
+    }
+    .component-entity-card--management {
+      font-size: .8em;
+      span {
+        color: $gray-6f;
+        font-weight: 500;
+        &.widget-icon {
+          font-size: 1.2em;
+          color: $gray-69;
+        }
+      }
+    }
+    .component-entity-card--badge-light {
+      background: $gray-fd;
+      margin-bottom: .5em;
+    }
+    .component-entity-card--badge-dark {
+      background: $gray-fd;
+      margin-bottom: .5em;
+      .component-entity-card--badge-count {
+        color: $primaryColor;
+      }
+    }
+    .component-entity-card--badge-count {
+      color: $primaryColorLighter;
+      font-size: 2em;
+      margin-top: .2em;
+      margin-bottom: .1em;
+    }
+    .component-entity-card--badge-text {
+      color: $gray-9b;
+      font-size: .8em;
+    }
+  }
+
+  .card-footer {
+    background: transparent !important;
+    border-top: 0;
+    position: relative;
+    .component-gateway-card--footer-btn {
+      position: absolute;
+      bottom: .5em;
+      right: 1em;
+    }
+
+    .btn.btn-qr-code,
+    .component-gateway-card--footer-btn-setting,
+    > .btn {
+      padding: .2em !important;
+      line-height: 1em;
+      font-size: 1.2em;
+      color: $card-footer-btn-color;
+      border: none !important;
+      background: none !important;
+      &:hover {
+        border: none !important;
+        background: $card-footer-btn-background-hover !important;
+        color: $card-footer-btn-color-hover !important;
+      }
+    }
+    .btn.btn-qr-code {
+      font-size: 1.1em;
+    }
+
+    .card-image-circular-btn {
+      display: block;
+      width: 3em;
+      height: 3em;
+      border: 1px solid $gray-f3;
+      border-radius: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-img {
+      display: block;
+      width: auto !important;
+      height: auto !important;
+      max-width: 95%;
+      max-height: 95%;
+      border-radius: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      padding: 0 !important;
+      margin: 0 !important;
+      transform: translate(-50%, -50%);
+    }
+
+  }
+  small {
+    color: $card-small-color;
+  }
+  &.h-19 {
+    height: 19em;
+  }
+}
+
+// TODO: remove after card UI refactor
+.entity-item-card {
+  height: 16em;
+  border-radius: $border-radius-6;
+  
+  &.h-19 {
+    height: 19em;
+  }
+
+  &.h-24 {
+    height: 24em;
+  }
+
+  &.entity-item-card-tall {
+    height: 17em;
+  }
+
+  &.entity-item-card--medium-tall {
+    height: 18.5em;
+  }
+  &.entity-item-card--with-image {
+    height: 20em;
+  }
+
+  &.entity-item-card--very-tall {
+    height: 32em;
+  }
+
+  .badge-primary {
+    background: $rgba-gray-1 !important;
+  }
+
+  .card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .card-image-area {
+    display: block;
+    width: 100%;
+    min-height: 5em;
+    height: 5em;
+    overflow: hidden;
+    position: relative;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom: 1px solid $gray-100;
+
+    .card-image-area--caption {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: $rgba-light-6;
+      line-height: 3em;
+      font-weight: bold;
+      font-size: 1.5em;
+      text-indent: .5em;
+      color: $gray-600;
+    }
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 100%;
+      opacity: .5;
+
+    }
+  }
+
+  .card-view-add-item-icon {
+    font-size: 2em;
+    color: $card-add-icon;
+  }
+  .card-footer {
+    border-top: 0;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding: .5em;
+    background: $gray-f9 !important;
+  }
+
+  .badge {
+    background: $gray-f9;
+    color: $primaryColor;
+    border-radius: $border-radius-3;
+    height: 2.5em;
+    line-height: 1.4em;
+    font-size: 1em;
+  }
+
+  &.entity-item-card--add {
+    cursor: pointer;
+    h1 {
+      margin-top: 1em;
+    }
+  }
+
+  &.entity-item-card--medium-tall.entity-item-card--add {
+    h1 {
+      margin-top: 1.6em;
+    }
+  }
+
+  .entity-item-card--badge {
+    bottom: 2em;
+  }
+
+  .entity-item-card--created {
+    bottom: .5em;
+  }
+
+  .entity-item-card--badge-user {
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 1.4em;
+    top: .5em;
+    right: .5em;
+    color: $cyan;
+  }
+
+  .entity-item-card--image {
+    width: 100%;
+    height: 100px;
+  }
+
+  //TODO: check after finish refactor
+  .carousel-item {
+    height: 100px;
+    .carousel-caption {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .card-carousel-image {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      overflow: hidden;
+
+      .card-carousel-image--caption {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5em;
+        font-size: .9em;
+        line-height: 2.5em;
+        text-indent: .5em;
+        background: $rgba-dark-3;
+        color: $white;
+        z-index: 4;
+        text-align: left;
+      }
+
+      .card-carousel-image--blur-image {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        width: 120%;
+        height: 120%;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: blur(.5em);
+        opacity: .8;
+        z-index: 2;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border: 0;
+      }
+      img {
+        z-index: 3;
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

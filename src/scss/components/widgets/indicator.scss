@@ -1,0 +1,322 @@
+.dashboard-widget-modal,
+.dashboard-widget--indicator {
+  .heart-rate-chart {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(.7) !important; 
+  }
+  .dashboard-widget--time-machine-icon {
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    position: absolute;
+    top: .5em;
+    left: .5em;
+    font-size: 1.2em;
+  }
+  .none-chart-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .chart-area {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10000;
+    //opacity: $overlayChartOpacity;
+    > * {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+    .highcharts-halo {
+       fill: rgba(200,200,200, .9) !important;
+    }
+    .highcharts-markers {
+      opacity: 0.8;
+      visibility: hidden !important;
+      &:hover {
+        visibility: visible !important;
+      }
+    }
+  }
+  .dashboard-widget--skeleton-icon {
+    text-align: center;
+    .widget-icon {
+      font-size: 2em;
+    }
+  }
+  .dashboard-widget--indicator-indicator-area {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    // background: $dashboard-widget-indicator-area;
+  }
+  .dashboard-widget--indicator-modal-indicator {
+    cursor: pointer;
+    width: 120px !important;
+    min-width: 120px !important;
+    max-width: 120px !important;
+    height: 120px !important;
+    // background: $dashboard-widget-modal-indicator-background;
+    svg.indicator--container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(.7) !important; 
+    }
+  }
+  .dashboard-widget-modal-indicator,
+  .dashboard-widget--indicator-indicator-area {
+    svg.indicator--container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.8);
+    }
+  }
+  .dashboard-widget--indicator-text-area {
+    position: absolute;
+    height: 100%;
+    left: 30%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    .main-center-text {
+      position: relative;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .name-card {
+      width: 100%;
+      display: block;
+      min-height: 1.4em;
+      &.name-card--skeleton {
+        background-color: $gray-f1;
+      }
+    }
+    .description-card {
+      width: 100%;
+      min-height: 2.4em;
+      display: block;
+      font-size: 1.5em;
+      &.description-card--skeleton {
+        background-color: $gray-f5;
+      }
+    }
+    .date-card-update {
+      display: block;
+      min-height: 1.2em;
+      font-size: .8em;
+      &.date-card--skeleton {
+        background-color: $gray-f5;
+      }
+    }
+    // todo: Remove below class after check
+    .dashboard-widget--latency {
+      display: block;
+      min-height: 1.2em;
+      position: absolute;
+      bottom: .6em;
+      left: .6em;
+      right: .6em;
+      font-size: .8em;
+      &.date-card--skeleton {
+        background-color: $gray-f5;
+      }
+    }
+    .dashboard-widget--text-latency {
+      display: block;
+      min-height: 1.2em;
+      position: relative;
+      font-size: .8em;
+    }
+  }
+  .indicator-selected {
+    background-color: $green;
+  }
+  .card-selected {
+    outline: 3px solid $green !important;
+  }
+  .dashboard-widget--indicator-modal-preview {
+    min-height: 200px;
+  }
+  .widgets-preview-container {
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      //content: 'Hi';
+      color: white;
+      font-size: 20px;
+      width: 50px;
+      height: 30px;
+    }
+    .highcharts-container {
+      svg {
+        transform: scale(1) !important;
+      }
+    }
+    .widget-value-text{
+      font-size: 32px !important;
+    }
+    .dashboard-widget--indicator-text-area,
+    .dashboard-widget--indicator-indicator-area {
+      overflow: hidden;
+      height: auto;
+      bottom: 0 !important;
+    }
+
+    &.resp-width-size-xxs {
+      .dashboard-widget--indicator-indicator-area {
+        display: none;
+      }
+      .dashboard-widget--indicator-text-area {
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+      }
+    }
+
+    $debugConfigList: (
+      (11, 12, 13, 14, 15, 16, 17),
+      (21, 22, 23, 24, 25, 26, 27),
+      (31, 32, 33, 34, 35, 36, 37),
+      (41, 42, 43, 44, 45, 46, 47),
+      (51, 52, 53, 54, 55, 56, 57),
+      (61, 62, 63, 64, 65, 66, 67),
+      (71, 72, 73, 74, 75, 76, 77)
+    ); 
+
+    $breakList: xxs xs sm md lg xl xxl xxxl; 
+    // 1 = vertical
+    $layoutConfigList: (
+    /* xxs xs  sm  md  lg  xl  xxl xxxl  <- height */
+      (0, 0,  1,  1,  1,  1,  1,  1), // width xxs
+      (0, 0,  1,  1,  1,  1,  1,  1), // width xs
+      (0, 0,  1,  1,  1,  1,  1,  1), // width sm
+      (0, 0,  1,  1,  1,  1,  1,  1), // width md
+      (0, 0,  0,  0,  0,  0,  0,  0), // width lg
+      (0, 0,  0,  0,  0,  0,  0,  0), // width xl
+      (0, 0,  0,  0,  0,  0,  0,  0), // width xxl
+      (0, 0,  0,  0,  0,  0,  0,  0) // width xxxl
+    ); 
+
+    $configList: (
+    /* xxs xs sm   md  lg  xl  xxl xxxl  <- height */
+      (1,  1,   1,   1,  1,  1,  1,  1), // width xxs
+      (1,  1,   1,   1,  1,  1,  1,  1), // width xs
+      (1,  1,   2,   2,  2,  2,  2,  2), // width sm
+      (1.5,1.5, 2,   3,  4,  5,  5,  5), // width md
+      (2,  2,   3, 3.5,  5,  5,  6,  6), // width lg
+      (2,  2,   4,   4,  6,  7,  8,  8), // width xl
+      (2,  2,   4,   5,  6,  7,  8,  9), // width xxl
+      (2,  2,   4,   5,  7,  8,  9,  9) // width xxxl
+    ); 
+    $configAreaRatioList: (
+    /* xxs xs sm   md  lg  xl  xxl xxxl  <- height */
+      (1,  1,   1,   1,  1,  1,  1,  1), // width xxs
+      (3,  1,   1,   1,  1,  1,  1,  1), // width xs
+      (1,  1,   2,   2,  2,  2,  2,  2), // width sm
+      (1.5,1.5, 2,   3,  4,  4,  4,  4), // width md
+      (2,  2,   3, 3.5,  5,  5,  6,  6), // width lg
+      (2,  2,   4,   4,  6,  7,  8,  8), // width xl
+      (2,  2,   4,   5,  6,  7,  8,  9), // width xxl
+      (2,  2,   4,   5,  7,  8,  9,  9) // width xxxl
+    ); 
+    $svgConfigList: (
+    /* xxs xs  sm     md    lg    xl   xxl   xxxl  <- height */
+      (.7, .7,  1.2,  1.2,  1.2, 1.2,  1.2,  1.2), // width xxs
+      (.7, .55, 1.2,  1.2,  1.2, 1.2,  1.2,  1.2), // width xs
+      (.8, .8,  1.2,  1.5,  1.5, 1.5,  1.5,  1.5), // width sm
+      (1,  1,   1.3,  1.5,  1.5, 2,  2,  2), // width md
+      (1,  1,   1.5,  2,    2,   2,    2,    2), // width lg
+      (1,  1,   1.5,  2,    2.5, 3,    3,    3), // width xl
+      (1,  1.5, 2.2,  2.5,  3,   3.5,  4,    4), // width xxl
+      (1,  1,   2.5,  2.5,  3,   3.5,  4,    4) // width xxxl
+    ); 
+    // Generate 1074 line with https://www.sassmeister.com/
+    @for $breakPointIndex from 1 through length($breakList){
+      $breakPointWidth: nth($breakList, $breakPointIndex);
+      $reletedRates: nth($configList, $breakPointIndex);
+      $reletedAreaRatioRates: nth($configAreaRatioList, $breakPointIndex);
+      $reletedSVGRates: nth($svgConfigList, $breakPointIndex);
+      $reletedLayoutRates: nth($layoutConfigList, $breakPointIndex);
+      &.resp-height-size-#{$breakPointWidth}{
+        .chart-area {
+          height: 20px + ($breakPointIndex * 8) !important;
+        }
+      }
+      @for $rateIndex from 1 through length($reletedRates){
+        $breakPointHeight: nth($breakList, $rateIndex);
+        $rateValue: nth($reletedRates, $rateIndex);
+        $rateAreaRatioValue: nth($reletedAreaRatioRates, $rateIndex);
+        $rateSvgValue: nth($reletedSVGRates, $rateIndex);
+        $reletedLayoutValue: nth($reletedLayoutRates, $rateIndex);
+        &.resp-width-size-#{$breakPointWidth}.resp-height-size-#{$breakPointHeight}{
+          @if ($reletedLayoutValue == 1 and $breakPointWidth != 'xxs') {
+            .dashboard-widget--indicator-indicator-area {
+              left: 0;
+              top: 10% !important;
+              height: 40% !important;
+              bottom: 50%;
+              width: 100%;
+            }
+            .dashboard-widget--indicator-text-area {
+              left: 0;
+              text-align: center;
+              top: 50%;
+              height: 50%;
+              bottom: 0;
+            }
+          }
+          @if ($reletedLayoutValue != 1 and $breakPointWidth != 'xxs') {
+            @if ($rateAreaRatioValue != 1) {
+              .dashboard-widget--indicator-indicator-area {
+                width: 35% + (2 * $rateAreaRatioValue);
+              }
+              .dashboard-widget--indicator-text-area {
+                left: 35% + (2 * $rateAreaRatioValue);
+              }
+            }
+          }
+
+          @if ($rateSvgValue != 1) {
+            .indicator--container {
+              transform: translate(-50%, -50%) scale(1 * $rateSvgValue) !important; 
+            }
+          }
+          @if ($rateValue != 1) {
+            font-size: 12px + $rateValue*1;
+            .widget-value-text{
+              font-size: 32px + $rateValue*1.5 !important;
+            }
+            .widget-value-text-device {
+              font-size: 14px + $rateValue*1 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

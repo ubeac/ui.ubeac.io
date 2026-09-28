@@ -1,0 +1,10 @@
+.component-entity-members {
+  overflow: hidden;
+  .avatar-area {
+    width: 2.3em !important;
+    height: 2.3em !important;
+    img{
+      max-height: 100%;
+    }
+  }
+}

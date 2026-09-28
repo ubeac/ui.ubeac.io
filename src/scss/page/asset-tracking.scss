@@ -1,0 +1,15 @@
+.page-asset-tracking {
+  .visible-on-row-hover {
+    display: none;
+  }
+  tr:hover {
+    .visible-on-row-hover {
+      display: block;
+    }
+    &.under-edit-row {
+      .visible-on-row-hover {
+        display: none;
+      }
+    }
+  }
+}

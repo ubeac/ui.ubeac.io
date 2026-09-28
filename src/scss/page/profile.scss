@@ -1,0 +1,66 @@
+.page-profile {
+  .profile-form-setting {
+    position: absolute;
+    right: .6em;
+    top: 1em;
+    &.btn-success:focus {
+      box-shadow: none !important;
+    }
+  }
+  @include media-breakpoint-down(xs) {
+    .profile-user--info {
+      width: 100%;
+      span {
+        font-size: 1em;
+        &.h3 {
+          font-size: 1.2em !important;
+        }
+      }
+    }
+  }
+  .alert {
+    .alert-text {
+      position: relative;
+      top: 2px;
+    }
+  }
+  .form-input-long,
+  .form-input-long input {
+    max-width: 320px !important;
+  }
+  .file-uploader--image{
+    width: 100%;
+    height: 100% !important;
+    min-height: 4em !important;
+  }
+
+  .avatar-image {
+    width: 12em;
+    float: left;
+    .avatar-container-circular {
+      display: block;
+      padding: 0;
+      width: 10em !important;
+      height: 10em !important;
+      border: 2px solid $primaryColor !important;
+    }
+  }
+
+  .component-file-uploader {
+    float: left;
+    border: 3px solid $primaryColor;
+    width: 10em;
+    height: 10em;
+    border-radius: 100%;
+    overflow: hidden;
+    .simple-file-uploader--change {
+      float: left;
+    }
+    .component-file-uploader-image {
+    }
+    .simple-file-uploader--change {
+      display: none;
+    }
+  }
+}
+

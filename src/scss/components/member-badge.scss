@@ -1,0 +1,42 @@
+.component-member-badge {
+  border-radius: $border-radius-30;
+  padding: .2em;
+  background: $gray-fb;
+  max-width: 100%;
+
+  span.main-text {
+    display: block;
+    color: $gray-300;
+    line-height: 24px;
+    padding-right: .5em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1em;
+    .name-and-family {
+      color: $gray-4a;
+      font-weight: 500;
+    }
+
+    .email-address {
+      color: $gray-9b;
+    }
+  }
+  .avatar-area {
+    border: 1px solid $white;
+    float: left;
+    border-radius: 100%;
+    margin-right: .5em;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    .avatar {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

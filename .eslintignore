@@ -1,0 +1,6 @@
+/dist
+/public
+/node_modules
+/tests
+src/components/multiselect/
+src/components/vuep

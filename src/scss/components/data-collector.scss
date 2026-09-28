@@ -1,0 +1,34 @@
+.component-data-collector {
+  .card-body {
+    @include media-breakpoint-down(xs) {
+      display: flex;
+      flex-direction: column !important;
+      padding-top: 0 !important;
+      canvas {
+        display: block;
+        float: none !important;
+      }
+      .component-gateway-copy-url {
+        .component-gateway-copy-url--url-area {
+          margin-right: 0 !important;
+        }
+      }
+    }
+  }
+  .info-area {
+    width: calc(100% - (200px + 1.5em));
+    float: left;
+    display: block;
+    @include media-breakpoint-down(xs) {
+      width: 100%;
+    }
+  }
+  .component-gateway-copy-url {
+    max-width: 600px;
+    *,
+    input{
+      text-align: left !important;
+      border-radius: 0 !important;
+    }
+  }
+}

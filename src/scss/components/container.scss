@@ -1,0 +1,5 @@
+.component-container{
+  & > .card {
+    margin-bottom: 0;
+  }
+}

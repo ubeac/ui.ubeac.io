@@ -1,0 +1,36 @@
+.notification-wrapper {
+  height: 6em;
+  .notifications {
+    width: 400px !important;
+    max-width: 100% !important;
+    position: fixed;
+    z-index: 100000000000000 !important;
+  }
+  .vue-notification {
+    padding: 1em !important;
+    margin: 0 1.5em 1.5em !important;
+    border-radius: $border-radius-6;
+    font-size: 1em !important; 
+    box-shadow: $box-shadow-card !important;
+
+    color: $white;
+    background: $notification-success !important;
+    border-left: 0 !important;
+
+    &.warn {
+      background: $notification-warn !important;
+      border-left: 0 !important;
+    }
+
+    &.error {
+      background: $notification-error  !important;
+      border-left: 0 !important;
+    }
+    &.success {
+      background: $notification-success !important;
+      border-left: 0 !important;
+    }
+
+  }
+}
+

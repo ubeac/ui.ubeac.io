@@ -1,0 +1,24 @@
+.indicator--container *{
+  transition: all 800ms ease !important; 
+}
+.indicator--hide {
+  opacity: 0;
+}
+.indicator--bar {
+  fill: $dashboard-widget-indicator-normal-bar-bg;
+}
+.indicator--in-active {
+  fill: $dashboard-widget-indicator-normal-bar-bg !important;
+}
+.indicator--light-active-switch {
+  fill: gold !important;
+}
+
+.indicator--green-active-switch {
+  fill: $secondaryColor !important;
+}
+.indicator--red-active-switch {
+  fill: $red !important;
+}
+
+

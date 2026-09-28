@@ -1,0 +1,76 @@
+.componenet-color-range{
+  position: relative;
+  min-height: 100px;
+  .componenet-color-range--item{
+    position: relative;
+    margin-bottom: 1em;
+    padding-left: 3.4em !important;
+
+    .componenet-color-range--color-indicator {
+      display: block;
+      width: .7em;
+      height: 130%;
+      position: absolute;
+      left: 2.3em;
+      top: calc(-65% - .5em);
+      border-radius: 3px;
+    }
+
+    .btn-add-range {
+      display: block;
+      min-width: 2em !important;
+      width: 2em !important;
+      height: 2em !important;
+      position: absolute;
+      left: 0;
+      top: calc(-50% - .5em);
+    }
+
+    .componenet-color-range--first-range {
+      border-radius: 6px !important;
+    }
+
+    .btn-remove-range {
+      display: none;
+      border: 0 !important;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+
+    .input-group{
+      position: relative !important;
+      border-radius: 6px;
+      input {
+        padding-left: 2.2em;
+        border-radius: 6px !important;
+      }
+      &:hover input.deleteable{
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+      }
+
+      &:hover .btn-remove-range {
+        display: block;
+      }
+    }
+
+    .vue-swatches__container{
+      position: absolute;
+      width: 18em;
+      z-index: 100000 !important;
+      overflow-x: hidden;
+    }
+
+    .vue-swatches__trigger {
+      display: block;
+      position: absolute;
+      top: -50% !important;
+      left: .5em;
+      transform: translateY(50%) !important;
+      width: 18px !important;
+      height: 18px !important;
+      z-index: 1000;
+    }
+
+  }
+}

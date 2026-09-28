@@ -1,0 +1,32 @@
+.component-entity-no-result {
+  border: 0;
+  box-shadow: $box-shadow-artwork;
+  min-height: 8.5em;
+  .card-body > span {
+    height: 5.5em;
+    padding-left: 4.5em;
+    position: relative;
+  }
+  .icon-area {
+    position: relative;
+    left: -5em;
+    top: 2em;
+    i {
+      font-size: 5em;
+    }
+  }
+  span.h5 {
+    color: $gray-4a;
+    line-height: 1em;
+    position: relative;
+    top: -2.6em;
+  }
+  a {
+    position: relative;
+    top: -3.1em;
+    color: $green;
+    span {
+      font-size: 1.8em;
+    }
+  }
+}

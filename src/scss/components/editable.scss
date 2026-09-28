@@ -1,0 +1,8 @@
+.component-editable {
+  &[contenteditable='true'] {
+    border: 2px dashed $primaryOpacLight;
+    border-radius: 6px;
+    padding-right: .3em;
+    padding-left: .3em;
+  }
+}

@@ -1,0 +1,65 @@
+.component-simulator {
+  position: relative;
+  .component-simulator--loading-bar {
+    position: absolute;
+    top: 0;
+    right: 2%;
+    left: 2%;
+    height: 3px;
+    background: $danger;
+    border-radius: 100px;
+    transition: all 1000ms ease !important;
+  }
+  .requests-log {
+    .list-group-item{
+      font-size: .8em;
+      padding: .5rem;
+      &:nth-child(even) {
+        background: $gray-f9; 
+      }
+    }
+  }
+  .input-group {
+    border-radius: $border-radius-4;
+    // box-shadow: $box-shadow-card;
+    border: 1px solid $disableBorder !important;
+    .input-group-prepend {
+      border-top-left-radius: $border-radius-4 !important;
+      border-bottom-left-radius: $border-radius-4 !important;
+      border: 0;
+      .input-group-text {
+        border-top-left-radius: $border-radius-4 !important;
+        border-bottom-left-radius: $border-radius-4 !important;
+        border: 0;
+        width: 5rem;
+        font-size: .8em;
+      }
+    }
+    .input-group-interval {
+      border-radius: 0 !important;
+    }
+    .input-group-append {
+      border-top-right-radius: $border-radius-4 !important;
+      border-bottom-right-radius: $border-radius-4 !important;
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+      border: 0;
+      .input-group-text {
+        border-top-right-radius: $border-radius-4 !important;
+        border-bottom-right-radius: $border-radius-4 !important;
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        border: 0;
+        width: 2.5rem;
+        font-size: .8em;
+        padding: 0 1em;
+      }
+    }
+    .form-control {
+      border: 0;
+      border-radius: $border-radius-4;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}

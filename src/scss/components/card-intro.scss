@@ -1,0 +1,53 @@
+.component-card-intro {
+  .component-card-intro--card {
+    color: $primaryColor;
+    .entity-item-card {
+      border-radius: 0;
+      border-top-left-radius: $border-radius-6;
+      border-top-right-radius: $border-radius-6;
+      .card-text {
+        position: absolute;
+        bottom: .5em;
+      }
+    }
+
+    .artwork-container {
+      display: none;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      width: 10em;
+      height: 10em;
+      border-radius: 20em;
+      background: rgba(250, 250, 250, 0.4);
+    }
+
+    .card-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-size: 5em;
+    }
+    .card-img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      height: 100%;
+    }
+    .card-footer {
+      .text-footer {
+        color: $primaryColor;
+        font-size: 1.1em;
+      }
+      .widget-icon {
+        .icon {
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+}

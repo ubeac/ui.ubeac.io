@@ -1,0 +1,36 @@
+
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+  branches:
+    include:
+    - 'nightly'
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '10.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install
+    npm run build
+  displayName: 'npm install and build'
+
+- task: FtpUpload@2
+  inputs:
+    credentialsOption: 'inputs'
+    serverUrl: 'ftps://38.117.65.182:10001'
+    username: 'testui.ubeac.io|ftp_testui.ubeac.io'
+    password: '$(PASSWORD)'
+    rootDirectory: 'dist'
+    filePatterns: '**'
+    remoteDirectory: '/wwwroot/'
+    clean: true
+    cleanContents: false
+    preservePaths: true
+    trustSSL: true
+

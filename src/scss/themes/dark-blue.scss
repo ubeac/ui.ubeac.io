@@ -1,0 +1,195 @@
+/* stylelint-disable */
+@import '../coreui/style';
+@import '../settings';
+// Bootstrap Variable
+// Overwrite settings color Colors
+$dark-primary: #010713;
+$dark-secondary: #020a1a;
+$dark-body: #031028;
+$page-title-color: $white;
+$main-background: $dark-body;
+$body-bg: $dark-body;
+$contrast-card-bg: #030f28;
+$card-empty-state: $dark-secondary;
+$btn-success: #4285F4;
+
+// Theme Colors
+$dark-card: #061534;
+$dark-setting: $dark-body;
+$dark-setting-primary: #010816;
+$dark-setting-footer: #020a1a;
+$dark-color-light: #a0b1cf;
+$form-primary-color: rgba($white, .03);
+$tooltip-background: $dark-color-light;
+$tooltip-color: $dark-body;
+$sidebar-primary-color: #03142e;
+
+// Navbar Header
+$navbar-header-border: $dark-secondary;
+$navbar-header-background: $dark-secondary;
+$navbar-header-brand-color: $gray-600;
+$navbar-header-brand-background-image: url('#{$imageBaseUrl}logo.svg');
+$navbar-header-brand-minimized-background-image: url('#{$imageBaseUrl}logo-shape.svg') !important;
+$navbar-header-toggler-color: $dark-color-light;
+$navbar-header-toggler-color-hover: $dark-color-light;
+$navbar-header-toggler-color-active: $dark-color-light;
+$navbar-header-nav-link-color: $gray-600;
+$header-avatar-box-shadow: $box-shadow-fab;
+
+// Sidebar
+$sidebar-background: #03102b;
+$sidebar-header-background-color: $dark-primary;
+$sidebar-avatar-background: $white;
+$sidebar-avatar-border: $white;
+$sidebar-nav-link-border: lighten($dark-card, 15);
+$sidebar-nav-link-background: $dark-card;
+$sidebar-nav-link-color: $white;
+$sidebar-nav-link-active-color: $white;
+$sidebar-nav-link-dropdown-open-color: $white;
+$sidebar-nav-link-background-hover: lighten($dark-primary, 10);
+$sidebar-nav-link-dropdown-open-background-minimized: lighten($dark-primary, 5) !important;
+
+// Dadshboard Global Styles
+$dashboard-page-title-color: $page-title-color;
+$dashboard-sidebar-bg: $dark-primary;
+$dashboard-sidebar-color: $dark-color-light; 
+$dashboard-sidebar-icon-color: $dark-color-light;
+$dashboard-sidebar-item-background-hover: lighten($dark-primary, 7);
+$dashboard-sidebar-item-background-color-active: lighten($dark-primary, 5);
+$dashboard-sidebar-accordion-item-background: lighten($dark-primary, 5);
+$dashboard-sidebar-accordion-item-color: $white;
+$dashboard-sidebar-search-input-color: lighten($dark-color-light, 5);
+$dashboard-widget-card-radius: 6px;
+$dashboard-widget-card-bg: rgba(#061735, .3);
+$dashboard-widget-card-color: $dark-color-light;
+$dashboard-widget-card-small-text-color: darken($dark-color-light, 10);
+$dashboard-widget-card-shadow: 0 0 0 0 ;
+$dashboard-widget-skelton-mode-background: $dark-card;
+$dashboard-widget-draggable-background: $dark-card;
+$dashboard-widget-draggable-color: $white;
+$dashboard-widget-draggable-placeholder: $dark-color-light;
+$dashboard-widget-toolbox-icon-color: $dark-color-light;
+$dashboard-widget-toolbox-icon-background: rgba($dark-body, .9);
+$dashboard-widget-toolbox-icon-background-hover: rgba($dark-body, 1);
+$dashboard-widget-modal-content-background: #21293a;
+$dashboard-widget-modal-header-background: #21293a;
+$dashboard-widget-modal-header-color: $dark-color-light;
+$dashboard-widget-modal-header-border-color: lighten(#21293a, 15);
+$dashboard-widget-modal-setting-header-border-color: rgba($white, .2);
+$dashboard-widget-modal-setting-header-nav-color: $white;
+$dashboard-widget-modal-footer-border-color: lighten(#21293a, 15);
+$dashboard-widget-modal-body-background: #21293a;
+$dashboard-widget-modal-footer-background: #21293a;
+$dashboard-widget-modal-footer-btn-secandry-color: #b3b5ba;
+$dashboard-widget-modal-setting-background: $dark-setting;
+$dashboard-widget-modal-setting-title-color: $white;
+$dashboard-widget-modal-setting-preview-title-color: $dark-color-light;
+$dashboard-widget-modal-setting-preview-background: $dark-setting-primary;
+$dashboard-widget-modal-setting-footer-background: $dark-secondary;
+$dashboard-widget-modal-setting-footer-border: $dark-setting-footer;
+$dashboard-widget-modal-setting-footer-btn-bg: rgba(255, 255, 255, 0.03);
+$dashboard-widget-modal-setting-footer-btn-bg-hover: rgba(255, 255, 255, .08);
+$dashboard-btn-light-background: $dark-primary;
+$dashboard-btn-light-color: $white;
+$dashboard-btn-light-border-color: $dark-primary;
+$dashboard-widget-modal-indicator-background: rgba($dark-primary, .8);
+$dashboard-widget-floor-map-background: $dark-card;
+$dashboard-widget-modal-setting-area: $contrast-card-bg;
+$dashboard-widget-modal-lined: #2a3447;
+$dashboard-widget-modal-header: $white;
+$dashboard-widget-modal-collapse-input: #121f36;
+$dashboard-widget-modal-tab:  darken($white, 2);
+$dashboard-widget-modal-tab-active: lighten($primaryColor, 10);
+
+// Dadshboard Indicator Widget
+$dashboard-widget-indicator-area: transparent;
+
+// Dashboard Floor Widget
+$dashboard-widget-floor-map-background: $dashboard-widget-card-bg;
+$dashboard-widget-floor-map-controler-background: rgba($dark-primary, .6);
+$dashboard-widget-floor-map-controler-color: $white;
+$dashboard-widget-floor-map-controler-background-active: lighten($dark-primary, 5);
+$dashboard-widget-floor-map-controler-border: rgba(0,0,0,0.2);
+$dashboard-widget-floor-map-controler-border-active: $dark-primary;
+$dashboard-widget-floor-map-controler-shadow: none;
+$dashboard-widget-floor-map-bar-border: $dark-primary;
+$dashboard-widget-floor-map-controler-zoom-background: rgba($dark-primary, .6);
+$dashboard-widget-floor-map-controler-zoom-color: $white;
+$dashboard-widget-floor-map-controler-zoom-background-disable: rgba($dark-primary, .2);
+$dashboard-widget-floor-map-controler-zoom-color-disable: lighten($dark-color-light, 15);
+$dashboard-widget-floor-map-grid-background: rgba(0,0,0,0) url('#{$imageBaseUrl}map/grid.png');
+$dashboard-widget-floor-map-grid-opacity: 0.8;
+$dashboard-widget-floor-map-popup-color: $white;
+$dashboard-widget-floor-map-popup-bg: rgba($dark-primary, .9);
+$dashboard-widget-floor-geo-map-popup-bg: rgba($dark-primary, .9);
+$overlayChartOpacity: .1;
+$dashboard-widget-indicator-normal-bar-bg: rgba(250, 250, 250, 0.2) ;
+$dashboard-widget-floor-map-pin-border: rgba(250,250,250,0.4);
+$dashboard-widget-floor-map-pin-bg: rgba(0,0,0,0.7);
+
+// Dashboard Map Setting
+$dashboard-map-device-table-header: #314166;
+$dashboard-map-device-table-header-border: #28365a;
+$dashboard-map-device-table-color: $dark-color-light;
+$dashboard-map-device-table-bg: lighten($dark-primary, 6);
+$dashboard-map-device-table-item:  #142144;
+$dashboard-map-device-table-item-border:  #28365a;
+$dashboard-map-device-table-item-selected:  #212e52;
+
+// Form
+$form-input-color: $white;
+$form-label-color: $white;
+$form-input-background: #0b192f;
+$form-input-background-focus: lighten(#0b192f, 5%);
+$form-input-disable-background: $dark-primary;
+$form-input-border-color: $form-primary-color;
+$form-input-focus-box-shadow: none;
+$form-input-prepend-background: $form-primary-color;
+$form-input-prepend-border-color: $form-primary-color;
+$form-input-prepend-color: $white;
+$form-input-border-color: #113982;
+
+// Multi-Select Component
+$form-multiselect-background: $form-primary-color;
+$form-multiselect-color: $white;
+$form-multiselect-border-color: $form-primary-color;
+$form-multiselect-content-wrapper-border-color: $form-primary-color;
+$form-multiselect-content-wrapper-background: rgba($dark-primary, 1);
+$form-multiselect-content-wrapper-color: $dark-color-light;
+$form-multiselect-placeholder: $gray-7;
+
+// Filtering Component
+$filtering-btn-outline-success-border-color: $dark-setting;
+
+// Buttons Icons
+$btn-fab-no-bg-color: $white;
+$btn-fab-no-bg-background-hover: lighten($dark-card, 4);
+$btn-fab-no-bg-background-active: lighten($dark-card, 2);
+
+// Artwork No-result
+$artwork-no-result-color: rgba(140, 154, 181, 0.4);
+
+// Card
+$card-background: $dark-body;
+$card-hover-background: darken($dark-primary, 10);
+$card-color: $white;
+$card-header-background: #1d293d;
+$card-header-color: $gray-e;
+$card-header-icon-color: $white;
+$card-header-small-color: $white;
+$card-body-color: $gray-c;
+$card-description-color: $gray-c;
+$card-small-color: $gray-c;
+$card-widget-icon-color: $gray-c;
+$card-footer-btn-color: $gray-f4;
+$card-footer-btn-background-hover: lighten($dark-body, 6);
+$card-footer-btn-color-hover: $dark-color-light;
+
+// Footer
+$footer-background: transparent;
+$footer-link: $blue;
+$footer-color: $dark-color-light;
+$footer-border: lighten($dark-body, 3);
+/* stylelint-enable */
+
+@import "../resources.scss";

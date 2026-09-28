@@ -1,0 +1,33 @@
+.component-gateway-copy-url {
+  input[type=text] {
+    background: $gray-f9;
+    border: 0;
+    border-radius: 100px !important;
+    color: $primaryColor;
+    text-align: center !important;
+    margin-right: .5rem;
+    display: block;
+    width: 130px;
+  }
+  .component-gateway-copy-url--url-area{
+    width: 160px;
+    display: block;
+    background: $gray-f9;
+    cursor: pointer;
+    border-radius: 100px !important;
+    margin-right: .5rem;
+    text-align: center !important;
+    border: 0;
+    color: $primaryColor !important;
+  }
+
+  .input-group {
+    .btn {
+      border: 0;
+      color: $primaryColor;
+    }
+  }
+  .component-gateway-copy-url--addon {
+    margin-top: 1px;
+  }
+}

@@ -1,0 +1,75 @@
+.component-authorized-users {
+  .component-authorized-users__user-list {
+    .btn {
+      width: 3.5em;
+    }
+  }
+
+  .form-inline .form-group > div {
+    width: calc(100% - 140px);
+  }
+  .form-inline {
+    border-top: 1px solid $gray-f9;
+    input {
+      @include media-breakpoint-down(xs) {
+        max-width: inherit;
+      }
+    }
+  }
+  .col-form-label {
+    width: 140px !important;
+  }
+  .authorize-user-avatar {
+    width: 3em;
+    height: 3em;
+    padding-top: .6em !important;
+    .avatar-container-circular {
+      display: block;
+    }
+  }
+
+  .list-group-item {
+    position: relative;
+    overflow: hidden;
+    //height: 3em;
+    border-radius: $border-radius-6;
+    .btn {
+      width: 3em;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      border: 0;
+      color: $red;
+      background: $gray-fd;
+      &:active,
+      &:focus {
+        color: $red-1;
+        background: $gray-f3;
+        border: 0;
+        box-shadow: none !important;
+      }
+      &:hover {
+        color: darken($red, 10);
+      }
+      i {
+        font-size: 1.1em;
+      }
+    }
+    .user-list--text {
+      padding-left: 3.5em;
+      padding-right: .5em;
+      display: block;
+      line-height: 2.8em;
+      color: $gray-700;
+    }
+  }
+
+  .authorize-user--add-btn {
+    border-top-right-radius: $border-radius-6 !important;
+    border-bottom-right-radius: $border-radius-6 !important;
+  }
+  .form-control.is-invalid {
+    background-image: none !important;
+  }
+}

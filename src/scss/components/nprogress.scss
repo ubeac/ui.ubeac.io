@@ -1,0 +1,29 @@
+/* stylelint-disable */
+#nprogress {
+  z-index: 100000 !important;
+  overflow: visible !important;
+  *{
+    border: 1px solid $red;
+  }
+  .spinner {
+    display: none !important;
+    right: 1.5em !important;
+    top: 1.3em !important;
+  }
+
+  .bar {
+    background: $primaryColor !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    .peg {
+      display: none !important;
+    }
+  }
+  .spinner-icon {
+    display: none !important;
+    border: solid 2px transparent;
+    border-top-color: $white !important;
+    border-left-color: $white !important;
+  }
+}
+/* stylelint-enable */

@@ -1,0 +1,20 @@
+.dashboard-widget--map {
+  .component-filtering {
+    .invalid-feedback {
+      position: absolute;
+      bottom: -.5em;
+    }
+  }
+
+  border-radius: 6px !important;
+  .dashboard-widget--skeleton-icon {
+    text-align: center;
+    .widget-icon {
+      font-size: 2em;
+    }
+  }
+  .card-radius {
+    border-radius: $border-radius-6;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,188 @@
+// Theme Colors
+/* stylelint-disable */
+//  Overwrite settings color Colors
+
+$dark-primary: #010A1A;
+$dark-secondary: #bebebe;
+$dark-body: #010A1A;
+$page-title-color: $primaryColor;
+$tooltip-background: $black;
+$tooltip-color: $white;
+$dark-color-light: #6c757d;
+$contrast-card-bg: $white;
+$card-empty-state: $gray-f5;
+$btn-success: #4285F4;
+
+// TODO: need fix -- START
+$main-background: #F3F3F3;
+
+// Navbar Header
+$navbar-header-border: $gray-ec;
+$navbar-header-background: $white;
+$navbar-header-brand-color: $gray-600;
+$navbar-header-brand-background-image: url('#{$imageBaseUrl}logo.svg');
+$navbar-header-brand-minimized-background-image: url('#{$imageBaseUrl}logo-symbol.png') !important;
+$navbar-header-toggler-color: $gray-4;
+$navbar-header-toggler-color-hover: $gray-4;
+$navbar-header-toggler-color-active: $gray-4;
+$navbar-header-nav-link-color: $gray-600;
+$header-avatar-box-shadow: $box-shadow-fab;
+
+// Sidebar
+$sidebar-background: $gray-f5;
+$sidebar-header-background-color: $sidebar-background;
+$sidebar-avatar-background: $white;
+$sidebar-avatar-border: $white;
+$sidebar-nav-link-border: $primaryColor;
+$sidebar-nav-link-background: #fafafa;
+$sidebar-nav-link-color: $sidebar-color;
+$sidebar-nav-link-active-color: #113982;
+$sidebar-nav-link-dropdown-open-color: $white;
+$sidebar-nav-link-background-hover: $white;
+$sidebar-nav-link-dropdown-open-background-minimized: darken($sidebar-background, 3);
+
+// Dadshboard Global Styles
+$dashboard-page-title-color: $page-title-color;
+$dashboard-sidebar-bg: $white;
+$dashboard-sidebar-color: $gray-6;
+$dashboard-sidebar-icon: $gray-6;
+$dashboard-sidebar-icon-color: $sidebar-background;
+$dashboard-sidebar-item-background-hover: transparent;
+$dashboard-sidebar-item-background-color-active: $gray-f8;
+$dashboard-sidebar-accordion-item-background: $gray-f9;
+$dashboard-sidebar-accordion-item-color: #051128;
+$dashboard-sidebar-search-input-color: #495057;
+$dashboard-widget-card-radius: 6px;
+$dashboard-widget-card-bg: $white;
+$dashboard-widget-card-color: lighten($black, 5);
+$dashboard-widget-card-small-text-color: #6c757d;
+$dashboard-widget-card-shadow: 0 0 0 0 ;
+$dashboard-widget-skelton-mode-background: $white;
+$dashboard-widget-draggable-background: $white;
+$dashboard-widget-draggable-color: $gray-4;
+$dashboard-widget-draggable-placeholder: $gray;
+$dashboard-widget-toolbox-icon-color: $primaryColorDarker;
+$dashboard-widget-toolbox-icon-background: rgba($white, .9);
+$dashboard-widget-toolbox-icon-background-hover: rgba($white, 1);
+$dashboard-widget-modal-content-background: $white;
+$dashboard-widget-modal-header-background: $white;
+$dashboard-widget-modal-header-color: $gray-4;
+$dashboard-widget-modal-header-border-color: #e9ecef;
+$dashboard-widget-modal-body-background: $white;
+$dashboard-widget-modal-footer-background: $white;
+$dashboard-widget-modal-footer-btn-secandry-color: #212529;
+$dashboard-widget-modal-footer-border-color: #e9ecef;
+$dashboard-widget-modal-setting-header-border-color: rgba(#212529, .5);
+$dashboard-widget-modal-setting-header-nav-color: #999999;
+$dashboard-widget-modal-setting-background: $white;
+$dashboard-widget-modal-setting-title-color: $black;
+$dashboard-widget-modal-setting-preview-title-color: $black;
+$dashboard-widget-modal-setting-preview-background: $main-background;
+$dashboard-widget-modal-setting-footer-background: $white;
+$dashboard-widget-modal-setting-footer-border: $white;
+$dashboard-widget-modal-setting-footer-btn-bg: rgba(0, 0, 0, 0.1);
+$dashboard-widget-modal-setting-footer-btn-bg-hover: rgba(0, 0, 0, 0.15);
+$dashboard-btn-light-background: #f8f9fa;
+$dashboard-btn-light-color: #212529;
+$dashboard-btn-light-border-color: #f8f9fa;
+$dashboard-widget-modal-indicator-background: #0f3374;
+$dashboard-widget-modal-setting-area: $contrast-card-bg;
+$dashboard-widget-modal-lined: $gray-ec;
+$dashboard-widget-modal-header: $primaryColor;
+
+// Dashboard Idicator Widget
+$dashboard-widget-indicator-area: transparent;
+
+// Dashboard Floor Map Widget
+$dashboard-widget-floor-map-background: $white;
+$dashboard-widget-floor-map-controler-background: rgba($white, .7);
+$dashboard-widget-floor-map-controler-color: #212529;
+$dashboard-widget-floor-map-controler-background-active: #dae0e5;
+$dashboard-widget-floor-map-controler-border: rgba(0,0,0,0.2);
+$dashboard-widget-floor-map-controler-border-active: #d3d9df;
+$dashboard-widget-floor-map-controler-shadow: 0 0 0 0.2rem rgba(216,217,219,0.5);
+$dashboard-widget-floor-map-bar-border: $gray-6;
+$dashboard-widget-floor-map-controler-zoom-background: rgba($white, .7);
+$dashboard-widget-floor-map-controler-zoom-color: $gray-6;
+$dashboard-widget-floor-map-controler-zoom-background-disable: #f4f4f4;
+$dashboard-widget-floor-map-controler-zoom-color-disable: #bbb;
+$dashboard-widget-floor-map-grid-background: rgba(0, 0, 0, 0) url('#{$imageBaseUrl}map/grid.png');
+$dashboard-widget-floor-map-grid-opacity: 0;
+$dashboard-widget-floor-map-popup-color: #333;
+$dashboard-widget-floor-map-popup-bg: rgba($white, .99);
+$dashboard-widget-floor-geo-map-popup-bg: rgba($white, .99);
+$overlayChartOpacity: 1;
+$dashboard-widget-indicator-normal-bar-bg: rgba(168, 177, 195, 0.4) ;
+$dashboard-widget-floor-map-pin-border: rgba(250,250,250,0.2);
+$dashboard-widget-floor-map-pin-bg: rgba(0,0,0,0.7);
+$dashboard-widget-modal-collapse-input: #e5e5e5;
+$dashboard-widget-modal-tab:  darken($white, 2);
+$dashboard-widget-modal-tab-active: lighten($primaryColor, 10);
+
+
+/// Dashboard Map Setting
+$dashboard-map-device-table-header: #d2d2d2;
+$dashboard-map-device-table-header-border: #ced4da;
+$dashboard-map-device-table-color: $dark-color-light;
+$dashboard-map-device-table-bg: #f7f7f7;
+$dashboard-map-device-table-item: #f7f7f7; 
+$dashboard-map-device-table-item-border:  #ced4da;
+$dashboard-map-device-table-item-selected: rgba(0, 0, 0, 0.1); 
+
+// Form
+$form-label-color: $gray-8;
+$form-input-background: #F8F6F6;
+$form-input-background-focus: $white;
+$form-input-disable-background: lighten($gray-e, 4);
+$form-input-color: $gray-4;
+$form-input-border-color: lighten($gray-ba, 10);
+$form-input-focus-box-shadow: 0 0 0 0.2rem rgba(0, 116, 188, 0.25);
+$form-input-prepend-background: #e9ecef;
+$form-input-prepend-color: $gray-4;
+$form-input-prepend-border-color: #ced4da;
+$form-input-border-color: #113982;
+
+// Multi-Select
+$form-multiselect-background: #F8F6F6;
+$form-multiselect-color: $gray-4;
+$form-multiselect-border-color: #e8e8e8;
+$form-multiselect-content-wrapper-border-color: #e8e8e8;
+$form-multiselect-content-wrapper-background: $white;
+$form-multiselect-content-wrapper-color: #35495e;
+$form-multiselect-placeholder: #35495e;
+
+// Filtering Component
+$filtering-btn-outline-success-border-color: $white;
+
+// Buttons Icons
+$btn-fab-no-bg-color: $gray-7;
+$btn-fab-no-bg-background-hover: $gray-f9;
+$btn-fab-no-bg-background-active: darken($gray-f9, 3);
+
+// Artwork No-result
+$artwork-no-result-color: $primaryOpacLight;
+
+// Card
+$card-background: $white;
+$card-hover-background: darken($white, 2);
+$card-color: #212529;
+$card-header-background: rgba(0,0,0,0.03);
+$card-header-color: $gray-4a;
+$card-header-icon-color: $primaryColor;
+$card-header-small-color: #6c757d; //text-muted
+$card-description-color: $gray-9b;
+$card-body-color: $gray-3;
+$card-small-color: $gray-6f;
+$card-widget-icon-color: $gray-69;
+$card-footer-btn-color: $gray-4a;
+$card-footer-btn-background-hover: $gray-fb;
+$card-footer-btn-color-hover: $gray-3;
+// TODO: need fix -- END
+
+// Footer
+$footer-background: transparent;
+$footer-link: $blue;
+$footer-color: $gray-900;
+$footer-border: $gray-ec;
+/* stylelint-enable */
+@import "./resources.scss";

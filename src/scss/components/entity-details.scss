@@ -1,0 +1,35 @@
+.component-entity-details {
+  overflow: hidden;
+  border: 0;
+  box-shadow: $box-shadow-1;
+  .component-entity-details--header {
+    color: $primaryColor;
+    height: 1.6em;
+  }
+  .component-entity-details--text {
+    color: $primaryColorLighter;
+    font-size: .9em;
+    a {
+      color: $primaryColor !important;
+    }
+  }
+  .date-info-area {
+    min-height: 46px;
+    .label-area {
+      float: left;
+      min-height: 46px;
+      line-height: 46px;
+    }
+  }
+  .component-entity-details--setting-link{
+    position: relative;
+    top: -4px;
+  }
+  .gateway-entity-head-details {
+    &.entity-details-url {
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
+    }
+  }
+}

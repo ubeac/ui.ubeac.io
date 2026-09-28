@@ -1,0 +1,22 @@
+.breadcrumb {
+  @media (max-width: 768px) {
+    margin-bottom: .5em !important;
+  }
+  .breadcrumb-menu {
+    .breadcrumb-settings-btn {
+      .btn-link {
+        padding-right: 0;
+      }
+    }
+    .disabled {
+      cursor: not-allowed;
+      color: lighten($gray-600, 40%) !important;
+      i {
+        color: lighten($gray-600, 40%) !important;
+      }
+      &:active {
+        background-color: transparent;
+      }
+    }
+  }
+}

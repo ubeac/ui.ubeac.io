@@ -1,0 +1,36 @@
+.component-map-pin-selector {
+  .component-icon-selector--selected {
+    border: 2px solid $green !important;
+  }
+  .btn-outline-success {
+    display: block;
+    width: 4em;
+    height: 4em;
+    padding: 1em;
+    border: 2px solid $white;
+    float: left;
+    position: relative;
+    background: $white;
+    &:hover {
+      border: 2px solid $secondaryColor;
+    }
+    &:focus {
+      box-shadow: none !important;
+      border: 2px solid $secondaryColor;
+    }
+    > div {
+      width: 1em;
+      height: 1em;
+      position: absolute;
+      left: 50%;
+      bottom: 10px;
+      transform: translateX(-50%);
+      svg {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

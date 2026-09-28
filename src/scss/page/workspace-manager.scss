@@ -1,0 +1,60 @@
+.workspace-manage-pages {
+  .container {
+    > * {
+      width: 100%;
+    }
+  }
+  .container-manage {
+    position: relative;
+    @include media-breakpoint-down(md) {
+      .page-content-header {
+        .btn-top-form {
+          position: static;
+          margin: auto;
+          width: 100%;
+          .btn {
+            margin-top: .5em;
+            margin-bottom: .5em;
+            float: left;
+            width: 100%;
+          }
+        }
+        .h2 {
+          margin-top: 0 !important;
+          text-align: center !important;
+          width: 100% !important;
+          clear: both;
+        }
+      }
+    }
+  }
+
+  .app-header {
+    position: static !important;
+    float: left;
+    border-bottom: 0;
+    box-shadow: none;
+    background: transparent;
+    .b-nav-dropdown {
+      padding-right: 0 !important;
+    }
+    .mobile-sidebar-toggler {
+      display: none;
+    }
+    .navbar-brand {
+       width: 220px;
+       background-size: 210px auto
+    }
+  }
+
+  .app-body {
+    margin-top: 0;
+  }
+
+  .container {
+    position: relative;
+    @include media-breakpoint-up(xs) {
+      max-width: 960px;
+    }
+  }
+}

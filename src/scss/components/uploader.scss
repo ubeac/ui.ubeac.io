@@ -1,0 +1,32 @@
+// TODO: import style must remove
+.picture-input {
+  .preview-container {
+    width: 100% !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+    border-radius: $border-radius-4;
+    max-height: 350px;
+  }
+
+  .picture-preview {
+    background-color: $gray-fa !important;
+    background-image: url('#{$imageBaseUrl}map/grid.png') !important;
+    background-repeat: repeat;
+  }
+
+  .picture-inner {
+    border-width: 2px !important;
+
+    .picture-inner-text {
+      font-size: 1.5rem !important;
+      color: $gray-300;
+    }
+
+    .icon {
+      padding-bottom: 3em;
+      font-size: 4rem !important;
+      color: $gray-300;
+    }
+  }
+}
+

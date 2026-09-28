@@ -1,0 +1,229 @@
+.btn {
+  border-radius: $border-radius-6;
+}
+
+button.close {
+  position: relative;
+  top: 3px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-secondary{
+  border: none;
+  color: $gray-4;
+  background: $gray-f9 !important;
+  min-width: 10em;
+  @include media-breakpoint-down(xxs) {
+    min-width: 5em;
+  }
+  &:hover{
+    background: $gray-f3 !important;
+    border: none;
+    color: $gray-4;
+  }
+  &:active{
+    background: $gray-f5 !important;
+    box-shadow: $box-shadow-fab !important;
+    color: $gray-4 !important;
+  }
+}
+
+.btn-outline-danger {
+  color: $danger !important;
+  @include media-breakpoint-down(xxs) {
+    min-width: auto;
+  }
+  &:hover{
+    color: $white !important;
+  }
+  &.disabled {
+    color: $danger !important;
+    &:hover{
+      color: $danger !important;
+    }
+  }
+}
+.btn-outline-info {
+  color: $primaryColor;
+  border-color: $primaryColor;
+}
+
+.btn-outline-success {
+  color: $success !important;
+  @include media-breakpoint-down(xxs) {
+    min-width: 5em;
+  }
+  &:focus {
+    box-shadow: none !important;
+  }
+  &:hover{
+    color: $white !important;
+  }
+  &.disabled {
+    color: $success !important;
+    &:hover{
+      color: $success !important;
+    }
+  }
+}
+
+.btn-outline-primary {
+  color: $primary !important;
+  &:hover,
+  &:active {
+    color: $white !important;
+    i {
+      color: $white !important;
+    }
+  }
+  &:focus,
+  &:active:focus {
+    box-shadow: none !important;
+  }
+  i {
+    color: $primary !important;
+  }
+}
+
+.btn-primary {
+  color: $white !important;
+  &:hover{
+    color: $white !important;
+  }
+  i {
+    color: $white !important;
+  }
+}
+
+.btn-success {
+  background: $button-blue !important;
+  border: none !important;
+  color: $white !important;
+  min-width: 10em;
+  box-shadow: $box-shadow-fab !important;
+  @include media-breakpoint-down(xxs) {
+    min-width: 5em;
+  }
+  &:hover{
+    box-shadow: $box-shadow-fab !important;
+    background: darken($button-blue, 10) !important;
+  }
+  &:focus{
+    box-shadow:0 0 0 0.2rem rgba($button-blue, 0.5) !important;
+  }
+  &:active{
+    box-shadow: $box-shadow-fab !important;
+    background: darken($button-blue, 15) !important;
+    color: $white !important;
+  }
+}
+
+.btn-fab-no-bg,
+.btn-fab {
+  width: 2.9em;
+  min-width: 2.9em;
+  max-width: 2.9em;
+  height: 2.9em;
+  float: right;
+  margin-right: .5em;
+  position: relative;
+  padding: 0px;
+  top: -.2em;
+  box-shadow: $box-shadow-fab;
+
+  i {
+    font-size: 1.2em;
+    margin-top: 0px !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    &:before {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &.btn-light {
+    color: $gray-6 !important;
+    background: $white !important;
+  }
+
+  &.btn-loading {
+    &::before {
+      border-radius: 100% !important;
+    }
+  }
+  &.btn-outline-success {
+    &:hover {
+      color: $secondaryColor !important;
+    }
+  }
+}
+
+.btn-fab-no-bg {
+  background: transparent;
+  font-size: 1em;
+  border-radius: 100% !important;
+  box-shadow: none !important;
+  color: $btn-fab-no-bg-color;
+  &:hover{
+    color:$btn-fab-no-bg-color;
+    background: $btn-fab-no-bg-background-hover !important;
+  }
+  &:active{
+    background: $btn-fab-no-bg-background-active !important;
+  }
+}
+
+
+.btn-success.btn-fab {
+  background: $green !important;
+  border: none !important;
+  color: $white !important;
+  &:hover{
+    box-shadow: $box-shadow-fab !important;
+    background: darken($green, 10) !important;
+  }
+  &:active{
+    box-shadow: $box-shadow-fab !important;
+    background: darken($green, 15) !important;
+  }
+}
+
+.btn-socket-status {
+  &.btn-socket-connected {
+    &,
+    &:focus,
+    &:hover,
+    &:active {
+      background: transparent !important;
+      color: $green !important;
+    }
+  }
+}
+
+.btn-iconic,
+.table-header .btn {
+  background: none !important;
+  border: none !important;
+  width: 3em;
+  max-width: 3em;
+  color: $card-header-icon-color;
+  &:hover{
+    color: darken($card-header-icon-color, 10);
+  }
+  &:active,
+  &:focus {
+    box-shadow: none !important;
+    color: darken($card-header-icon-color, 15);
+  }
+}
+
+.btn-iconic {
+  height: 3em;
+}

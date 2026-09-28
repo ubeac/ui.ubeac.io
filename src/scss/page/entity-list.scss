@@ -1,0 +1,48 @@
+.page-entity-list {
+
+  // TODO: fix layout
+  .page-entity-list--main-title {
+    position: relative;
+    top: -1px;
+  }
+
+  .page-entity-list--main-card {
+    background: transparent;
+    border: 0;
+  }
+
+  .page-entity-list--header {
+    background: transparent;
+    border: 0;
+    line-height: 1.6em;
+    .h3 {
+      line-height: 0.8em;
+    }
+
+    .page-entity-list--header--icon {
+      font-size: 1.6em;
+    }
+  }
+
+  .badge.item.no-bg {
+    font-size: 1.2em;
+  }
+  .page-card--very-tall {
+    height: 18.5em;
+    overflow: hidden;
+    border: 0;
+    .page-card--description {
+      height: 10em;
+      overflow: hidden;
+    }
+    .page-card--footer-button {
+      display: block;
+      position: absolute;
+      bottom: 1em;
+    }
+  }
+
+  .card-footer {
+    background-color: $white;
+  }
+}

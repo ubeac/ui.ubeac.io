@@ -1,0 +1,9 @@
+.page-building-details {
+  .leaflet-floor-map {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-top-left-radius: $border-radius-6;
+    border-bottom-left-radius: $border-radius-6;
+    box-shadow: none !important;
+  }
+}

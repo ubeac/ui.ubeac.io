@@ -1,0 +1,223 @@
+.component-file-uploader {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: $border-radius-6;
+
+  .simple-file-uploader {
+    position: relative;
+    height: 2.6em;
+    cursor: pointer;
+    text-align: left;
+
+    & .simple-file-uploader--input-container {
+      display: block;
+      position: absolute;
+      left: 0em;
+      top: 0;
+      width: calc(100% - 3em);
+      bottom: 0;
+      right: 0;
+      z-index: 200 !important;
+    }
+    &.simple-file-uploader--empty {
+      input {
+        z-index: 300 !important;
+      }
+      & .simple-file-uploader--input-container {
+        width: 100% !important;
+        right: 3em;
+        left: 0em;
+      }
+    }
+    input {
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      cursor: pointer !important;
+    }
+
+    .simple-file-uploader--button-group {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 150;
+      cursor: pointer;
+    }
+
+    .simple-file-uploader--text {
+      @media (max-width: 575px) {
+        padding-right: 3em !important;
+        margin-right: .5em !important;
+      }
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: auto;
+      padding-left: 4em !important;
+      padding-right: 16em !important;
+      line-height: 2.5em;
+      border: 1px solid $gray-c;
+      color: $gray-9;
+      border-radius: $border-radius-6 ;
+      z-index: 10;
+      white-space: nowrap;
+      overflow: hidden;
+      cursor: pointer !important;
+      text-overflow: ellipsis;
+
+      & div {
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .simple-file-uploader--upload-icon {
+      position: absolute;
+      left: 0;
+      padding: 0;
+      top: 0;
+      width: 2.5em;
+      bottom: 0;
+      background-color: $white !important;
+      border-top-right-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+      border-top-left-radius: 6px !important;
+      border-bottom-left-radius: 6px !important;
+      z-index: 100;
+      cursor: pointer !important;
+    }
+
+    .simple-file-uploader--view-file {
+      display: block;
+      width: 3em !important;
+      position: relative;
+      height: 2.6em;
+      line-height: 2.5em;
+      right: 0;
+      float: right;
+      bottom: 0;
+      background-color: $white !important;
+      border-top-right-radius: 6px !important;
+      border-bottom-right-radius: 6px !important;
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+      text-align: center;
+      cursor: pointer !important;
+      z-index: 300;
+      &:hover {
+        color: $primaryColorLighter !important;
+      }
+      i {
+        text-align: center;
+        line-height: 1.2em;
+      }
+    }
+
+    .simple-file-uploader--change {
+      @media (max-width: 575px) {
+        display: none !important
+      }
+      display: block;
+      border-bottom: 0 !important;
+      width: 7em;
+      position: relative;
+      right: 0;
+      float: right;
+      bottom: 0;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      z-index: 401 !important;
+      cursor: pointer;
+      &:hover {
+        color: $primaryColorLighter !important;
+      }
+    }
+  }
+
+  .component-file-uploader-image {
+    text-align: center;
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+    border-radius: $border-radius-6;
+
+    .file-uploader--image {
+      text-align: center;
+      display: block;
+      border-radius: $border-radius-6;
+      min-height: 200px;
+      height: 100%;
+      background-color: $gray-fa;
+      background-image: url('#{$imageBaseUrl}map/grid.png') !important;
+
+      input {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: 10000;
+        cursor: pointer;
+      }
+
+      .file-uploader--image-file {
+        max-height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &.component-file-uploader--empty {
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: contain;
+          background-image: url('#{$imageBaseUrl}/no-image.png') !important;
+        }
+      }
+    }
+  }
+
+  button {
+    border-radius: $border-radius-4 !important;
+  }
+
+  .image-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      bottom: 0;
+      right: 0;
+      transform: translate(-50%,-50%);
+      // font-size: 1em;
+      content: ' ';
+      background-image: url(/static/img/loading-circle.svg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      border-radius: .2em;
+    }
+  }
+}

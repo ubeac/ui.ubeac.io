@@ -1,0 +1,60 @@
+.multiselect,
+.multiselect__input,
+.multiselect__single {
+  font-size: 1em;
+  min-height: 35px !important;
+  height: 35px !important;
+}
+.multiselect__input{
+  &::placeholder {
+    color: $form-multiselect-placeholder;
+  }
+}
+
+.multiselect__single,
+.multiselect__tags,
+.multiselect__input {
+  border: 0;
+  border-radius: 0;
+  background: $form-multiselect-background;
+  color: $form-multiselect-color;
+  min-height: 35px !important;
+  height: 35px !important;
+  line-height: 35px !important;
+}
+
+.multiselect__select {
+  min-height: 35px !important;
+  height: 35px !important;
+}
+
+.multiselect__tags {
+  padding-top: 0;
+  border-color: transparent;
+}
+
+.multiselect {
+  font-size: 1em;
+  .multiselect__content-wrapper {
+    z-index: 1000000000;
+    border-color: $form-multiselect-content-wrapper-border-color;
+    background: $form-multiselect-content-wrapper-background;
+    color: $form-multiselect-content-wrapper-color;
+  }
+  .multiselect__devices {
+    border: 0;
+  }
+
+  &.multiselect--disabled{
+    height: 40px;
+    .multiselect__tags{
+      height: 40px;
+    }
+  }
+}
+
+.no-validate {
+  .multiselect__tags{
+    border-color: $danger;
+  }
+}

@@ -1,0 +1,117 @@
+.component-geo-map{
+  width: 100%;
+  height: 100%;
+
+
+  .map-markers-box {
+    li {
+      height: 30px;
+      line-height: 28px;
+      list-style: none;
+      .indicator--circle {
+        width: 1em;
+        height: 1em;
+      }
+    }
+    .icon-container {
+      display: block;
+      width: 1em;
+      height: 2em;
+      position: relative;
+      i{
+        font-size: 1.1em;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        float: auto;
+      }
+    }
+  }
+
+  .poi-info-window div,
+  .poi-info-window a {
+    background-color: transparent;
+    color: inherit;
+    opacity: .8;
+  }
+  // TODO: Improve below code
+  .gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom {
+    div:first-child {
+      div:first-child {
+        background: $dashboard-widget-floor-map-controler-background !important;
+        div:nth-child(2) {
+          display: none !important;
+        }
+      }
+    }
+  }
+
+  .gm-style {
+    [type="button"],
+    [role="button"] {
+      background: $dashboard-widget-floor-geo-map-popup-bg !important;
+      color: $dashboard-widget-floor-map-popup-color !important;
+      > img {
+        width: 14px !important;
+        height: 14px !important;
+      }
+
+    }
+    .gm-ui-hover-effect {
+      display: none !important;
+      top: 0px !important;
+      right: 0px !important;
+      background: $dashboard-widget-floor-geo-map-popup-bg !important;
+      &::after {
+        content: "\f16a";
+        font-family: "ubeacons";
+        color: $dashboard-widget-floor-map-popup-color;
+        font-size: .8em;
+      }
+      img {
+        display: none !important;
+      }
+    }
+
+    .gm-bundled-control > div {
+      border-radius: 3px;
+      margin-right: .3em;
+      right: .4em;
+    }
+
+    .gm-bundled-control > div >  div {
+      button {
+        border-radius: 3px;
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+        border-bottom: 0;
+      }
+    }
+  }
+
+  .gm-style .gm-style-iw-t {
+    position: relative !important;
+    margin: .2em .2em 0 0;
+    width: auto;
+    &:hover .gm-ui-hover-effect{
+      display: block !important;
+    }
+  }
+
+  .gm-style .gm-style-iw-d {
+    overflow: hidden !important;
+  }
+
+  .gm-style .gm-style-iw-c {
+    background: $dashboard-widget-floor-geo-map-popup-bg !important;
+    color: $dashboard-widget-floor-map-popup-color;
+    overflow: hidden;
+    padding: .9em .9em .4em .9em !important;
+  }
+
+  .gm-style .gm-style-iw-t::after {
+    box-shadow: none;
+    background: $dashboard-widget-floor-geo-map-popup-bg !important;
+  }
+}
+

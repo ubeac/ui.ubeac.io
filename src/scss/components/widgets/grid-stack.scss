@@ -1,0 +1,76 @@
+.grid-stack-item.cloned-widget.ui-draggable-dragging {
+  width: 200px;
+  height: 200px;
+  background: $dashboard-widget-draggable-background;
+  color: $dashboard-widget-draggable-color;
+  border-radius: $border-radius-6;
+  box-shadow: $box-shadow-grid-stack;
+  .widget-details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+    text-align: center;
+    .card-icon-area {
+      display: block;
+      font-size: 2em;
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+.grid-stack-diabled {
+  .ui-resizable-handle {
+    display: none !important;
+  }
+}
+
+.grid-stack {
+  user-select: none;
+  min-height: 500px !important;
+  width: 100%;
+
+  .placeholder-content {
+    border-radius: 6px;
+    border: 3px dashed $dashboard-widget-draggable-placeholder !important;
+  }
+  
+  .dashboard-widget-modal--zindex-fixture,
+  .dashboard-widget-modal {
+    z-index: 100000000 !important;
+    position: fixed !important;
+  }
+
+  .open-setting-modal {
+    z-index: 10000000 !important;
+    .ui-resizable-handle {
+      display: none !important;
+    }
+  }
+
+  & > .grid-stack-item > .grid-stack-item-content {
+    right: 6px;
+    left: 6px;
+    box-shadow: $box-shadow-dashboard-widgets;
+    &:hover {
+      box-shadow: $box-shadow-dashboard-widgets-hover;
+    }
+  }
+  .dashboard-widget {
+    display: block;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+  }
+}
+
