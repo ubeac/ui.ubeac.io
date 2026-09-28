@@ -23,8 +23,8 @@ steps:
 - task: FtpUpload@2
   inputs:
     credentialsOption: 'inputs'
-    serverUrl: 'ftps://38.117.65.182:10001'
-    username: 'devui.ubeac.io|ftp_testui.ubeac.io'
+    serverUrl: 'ftps://<server-ip>:10001'
+    username: '<ftp-username>'
     password: '$(PASSWORD)'
     rootDirectory: 'dist'
     filePatterns: '**'

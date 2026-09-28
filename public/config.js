@@ -11,10 +11,11 @@ window.CONFIG = {
   socketURL: 'https://socket.ubeac.io/socket',
   identityServerURL: 'https://idsrv.ubeac.io/',
   identityServerClientId: 'uBeacUIClient',
+  identityServerClientSecret: '<client-secret>',
   gatewayUrlProtocol: 'https://',
   gatewayUrlFirstPart: 'hub.ubeac.io/',
-  gaCode: 'UA-135535158-2',
-  googleMapKey: 'AIzaSyD-oX2ICjm2yVePw-_Rsh8dMljOBL6keYA',
+  gaCode: '<google-analytics-id>',
+  googleMapKey: '<google-maps-api-key>',
   websensorAddress: 'https://websensor.ubeac.io/',
   //websensorAddress: 'http://192.168.0.104:3003/',
   socketRetryDelay: 3000,
@@ -44,7 +45,7 @@ window.CONFIG = {
       cssCalss: 'theme-dark-green'
     }
   },
-  captchaSiteKey: '6Le-S5MUAAAAAK3_ZBa-yvu2G2SL-Oxmd_EqY3sk',
+  captchaSiteKey: '<recaptcha-site-key>',
   myWidgetsEnable: false,
   map: {
     defaultMapCenter: {

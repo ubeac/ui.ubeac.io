@@ -2,7 +2,7 @@ import Config from '../config/config'
 /* eslint-disable */
 export const IdentityServerConfig = {
   client_id: Config.identityServerClientId,
-  client_secret: 'fbAF32#$sfh844hfgfbA45SGgha83!Srf4334#34g%gsE2',
+  client_secret: Config.identityServerClientSecret,
   response_type: 'password',
   scope: 'openid profile api idsrv socket roles',
   authority: Config.identityServerURL
