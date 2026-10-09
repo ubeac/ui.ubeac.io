@@ -2,6 +2,8 @@
 
 The customer-facing web app of uBeac, served at `app.ubeac.io`. Users sign up, create a team, connect gateways, watch their devices report live, place them on building floor plans, and build real-time dashboards with drag-and-drop widgets.
 
+Created by [Momentaj](https://momentaj.com/), a Toronto AI engineering firm.
+
 > **Status: retired, published for reference.** The app's changelog runs from v0.0.1 (August 2018) to v1.0.3 (June 2020). The hosted service has been retired, and the source is published here under the MIT license. It is a Vue 2 codebase, which is past end of life. **Read [Known limitations and security notes](#16-known-limitations-and-security-notes) before running it.**
 
 | Repository | What it is |
